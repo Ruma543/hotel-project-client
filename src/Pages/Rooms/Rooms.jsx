@@ -56,8 +56,8 @@ const Rooms = () => {
           </label> */}
           <select onChange={e => setPrice(e.target.value)} name="" id="">
             <option value="">Select One</option>
-            <option value="asc">low to high</option>
-            <option value="desc">high to low</option>
+            <option value="asc">High to low</option>
+            <option value="desc">Low to high</option>
           </select>
         </div>
       </div>
@@ -65,72 +65,70 @@ const Rooms = () => {
       {isLoading ? (
         <p>loading....</p>
       ) : (
-        <div className="grid grid-cols-3">
-          {data?.data?.result.map(room => (
-            <div
-              key={room._id}
-              className="flex flex-col items-center justify-center w-full max-w-sm mx-auto my-4"
-            >
+        <div>
+          <div className="grid grid-cols-3">
+            {data?.data?.result.map(room => (
               <div
-                className="w-full h-64 bg-gray-100 bg-center bg-cover rounded-lg shadow-md"
-                style={{
-                  backgroundImage: `url(${room.room_image})`,
-                }}
-              ></div>
+                key={room._id}
+                className="flex flex-col items-center justify-center w-full max-w-sm mx-auto my-4"
+              >
+                <div
+                  className="w-full h-64 bg-gray-100 bg-center bg-cover rounded-lg shadow-md"
+                  style={{
+                    backgroundImage: `url(${room.room_image})`,
+                  }}
+                ></div>
 
-              <div className="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
-                <h3 className="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
-                  {room.room_name}
-                </h3>
+                <div className="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                  <h3 className="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                    {room.room_name}
+                  </h3>
 
-                <div className="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
-                  <span className="font-bold text-gray-800 dark:text-gray-200">
-                    Price: ${room.price_per_night}
-                  </span>
-                  <Link to={`/details/${room._id}`}>
-                    <button className="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
-                      Details
-                    </button>
-                  </Link>
+                  <div className="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                    <span className="font-bold text-gray-800 dark:text-gray-200">
+                      Price: ${room.price_per_night}
+                    </span>
+                    <Link to={`/details/${room._id}`}>
+                      <button className="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
+                        Details
+                      </button>
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-      )}
+            ))}
+          </div>
 
-      {isLoading ? (
-        <p>loading...</p>
-      ) : (
-        <div className="flex justify-center">
-          <button onClick={handlePrev}>
-            <span>
-              <FcPrevious></FcPrevious>{' '}
-            </span>
-          </button>
-          {Array(totalPage)
-            .fill(0)
-            .map((item, index) => {
-              const pageNumber = index + 1;
-              return (
-                <button
-                  key={pageNumber}
-                  onClick={() => setPage(pageNumber)}
-                  className={`${
-                    pageNumber === page
-                      ? 'btn btn-circle btn-primary '
-                      : ' btn btn-circle btn-ghost'
-                  }`}
-                >
-                  {pageNumber}
-                </button>
-              );
-            })}
-          <button onClick={handleNext}>
-            <span>
-              <FcNext></FcNext>
-            </span>
-          </button>
+          <div className="flex justify-center">
+            <button onClick={handlePrev}>
+              <span>
+                <FcPrevious></FcPrevious>{' '}
+              </span>
+            </button>
+            {Array(totalPage)
+              .fill(0)
+              .map((item, index) => {
+                const pageNumber = index + 1;
+                return (
+                  <button
+                    key={pageNumber}
+                    onClick={() => setPage(pageNumber)}
+                    className={`${
+                      pageNumber === page
+                        ? 'btn btn-circle btn-primary '
+                        : ' btn btn-circle btn-ghost'
+                    }`}
+                  >
+                    {pageNumber}
+                  </button>
+                );
+              })}
+            <button onClick={handleNext}>
+              <span>
+                <FcNext></FcNext>
+              </span>
+            </button>
+          </div>
         </div>
       )}
     </div>

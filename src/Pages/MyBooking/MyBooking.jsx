@@ -3,6 +3,7 @@ import { useState } from 'react';
 import useAxiosSecure from '../../Hook/useAxiosSecure';
 import { useEffect } from 'react';
 import useAuth from '../../Hook/useAuth';
+import Swal from 'sweetalert2';
 
 const MyBooking = () => {
   const { user } = useAuth();
@@ -17,6 +18,34 @@ const MyBooking = () => {
       .get(url, { withCredentials: true })
       .then(res => setBookings(res.data));
   }, [url, axiosSecure]);
+
+  const handleDelete = _id => {
+    console.log(_id);
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!',
+    }).then(result => {
+      if (result.isConfirmed) {
+        axiosSecure.delete(`/bookings/${_id}`).then(res => {
+          console.log(res.data);
+          if (res?.data?.deletedCount > 0) {
+            Swal.fire({
+              title: 'Deleted!',
+              text: 'Your file has been deleted.',
+              icon: 'success',
+            });
+            const remaining = bookings.filter(item => item._id !== _id);
+            setBookings(remaining);
+          }
+        });
+      }
+    });
+  };
   return (
     <div className="w-11/12 mx-auto">
       {loading ? (
@@ -30,8 +59,18 @@ const MyBooking = () => {
               <div className="grid grid-cols-2 " key={item._id}>
                 <img className="h-56" src={item.room_image} alt="" />
                 <div>
-                  <button className="btn btn-primary">Update</button>
-                  <button className="btn btn-error">Delete</button>
+                  <h3>Room: {item.room_name}</h3>
+                  <h3>Customer Name {item.customerName}</h3>
+                  <h3>Booking Date: {item.date}</h3>
+                  <div>
+                    <button className="btn btn-primary">Update Date</button>
+                    <button
+                      onClick={() => handleDelete(item._id)}
+                      className="btn btn-error"
+                    >
+                      Delete
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}
