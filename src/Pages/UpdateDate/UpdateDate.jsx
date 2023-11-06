@@ -4,13 +4,15 @@ import useAuth from '../../Hook/useAuth';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { useState } from 'react';
+import useAxiosSecure from '../../Hook/useAxiosSecure';
 
 // const url = 'https://i.ibb.co/5Wv48dg/updateimage.jpg';
 const UpdateDate = () => {
   const updateDate = useLoaderData();
   const { loading } = useAuth();
   const [startDate, setStartDate] = useState(new Date());
-  const { room_name, room_image, customerName } = updateDate || {};
+  const axiosSecure = useAxiosSecure();
+  const { room_name, room_image, customerName, _id } = updateDate || {};
   const handleUpdateBookingDate = e => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
@@ -19,12 +21,12 @@ const UpdateDate = () => {
     const updateDate = { name, date };
     console.log(updateDate);
   };
-  //  axiosSecure
-  //    .patch(`/services/s/${room_name}`, feedback)
-  //    .then(res => console.log(res.data))
-  //    .catch(error => {
-  //      console.error('An error occurred:', error);
-  //    });
+  axiosSecure
+    .patch(`/bookings/s/${_id}`, updateDate)
+    .then(res => console.log(res.data))
+    .catch(error => {
+      console.error('An error occurred:', error);
+    });
   return (
     <div>
       {loading ? (

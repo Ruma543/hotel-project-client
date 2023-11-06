@@ -1,15 +1,18 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import Marquee from 'react-fast-marquee';
 import BookPage from '../../Component/BookPage/BookPage';
 import useAuth from '../../Hook/useAuth';
+import useAxiosSecure from '../../Hook/useAxiosSecure';
 
 const RoomDetails = () => {
   const roomDetails = useLoaderData();
   const { user } = useAuth();
+  const axiosSecure = useAxiosSecure();
+  const [userReview, setUserReview] = useState([]);
   const {
     _id,
-    room_id,
+    roomId,
     room_name,
     room_image,
     room_description,
@@ -25,7 +28,20 @@ const RoomDetails = () => {
   //   const date = form.get('date');
   //   console.log(date);
   // };
-  console.log(available_rooms);
+  const url = '/userReview';
+  useEffect(() => {
+    axiosSecure.get(url, { withCredentials: true }).then(res => {
+      const reviews = res.data || [];
+      const filteredReviews = reviews.filter(item => item.roomId === roomId);
+      setUserReview(filteredReviews);
+      // console.log(res.data);
+      // const filterReview = res.data?.filter(item => item.roomId !== roomId);
+      // setUserReview(filterReview);
+    });
+  }, [url, axiosSecure, roomId]);
+  // console.log(filterReview);
+  console.log(userReview);
+  console.log(roomDetails);
   return (
     <div className="w-11/12 mx-auto">
       <img
@@ -33,6 +49,11 @@ const RoomDetails = () => {
         src={room_image}
         alt=""
       />
+      {/* <h3>{userReview.review}</h3> */}
+      <h3> {userReview?.length}</h3>
+      {userReview?.map(item => (
+        <h3 key={item._id}>{item.review}</h3>
+      ))}
       <div className=" w-2/5 mx-auto my-5">
         <Marquee>
           <h3 className="text-blue-600 font-semibold font-serif ">

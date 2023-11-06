@@ -43,6 +43,7 @@ const BookPage = () => {
       room_name,
       price_per_night,
       room_size,
+      roomId: _id,
     };
 
     axiosSecure
