@@ -18,18 +18,21 @@ const MyBooking = () => {
       .then(res => setBookings(res.data));
   }, [url, axiosSecure]);
   return (
-    <div>
+    <div className="w-11/12 mx-auto">
       {loading ? (
         <p>loading.....</p>
       ) : (
         <div>
           <h3> Your Booking:{bookings.length}</h3>
 
-          <div>
+          <div className="space-y-5">
             {bookings.map(item => (
-              <div key={item._id}>
-                <img src={item.room_image} alt="" />
-                <div></div>
+              <div className="grid grid-cols-2 " key={item._id}>
+                <img className="h-56" src={item.room_image} alt="" />
+                <div>
+                  <button className="btn btn-primary">Update</button>
+                  <button className="btn btn-error">Delete</button>
+                </div>
               </div>
             ))}
           </div>

@@ -2,12 +2,16 @@ import { useLoaderData } from 'react-router-dom';
 import useAuth from '../../Hook/useAuth';
 import useAxiosSecure from '../../Hook/useAxiosSecure';
 import axios from 'axios';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+
 const url = 'https://i.ibb.co/7KyFJzQ/bookpage.jpg';
 const BookPage = () => {
   const { user } = useAuth();
   const bookItem = useLoaderData();
   const axiosSecure = useAxiosSecure();
+  const [startDate, setStartDate] = useState(new Date());
   console.log(bookItem);
   const {
     _id,
@@ -110,13 +114,13 @@ const BookPage = () => {
           </div>
           <div className="flex flex-col space-y-4">
             <label className=" text-white text-xl font-semibold text-left ">
-              Date
+              Booking Date
             </label>
-            <input
-              type="date"
+            <DatePicker
               name="date"
-              placeholder="date"
-              // defaultValue={room_size}
+              selected={startDate}
+              onChange={date => setStartDate(date)}
+              minDate={new Date()}
               className="w-full rounded-lg px-4 py-2 outline-0"
             />
           </div>
