@@ -1,0 +1,384 @@
+[
+  {
+    "room_id": 1,
+    "room_name": "Cozy Standard Room",
+    "room_image": "https://i.ibb.co/kBs0Nw8/1.jpg",
+    "room_description": "Indulge in comfort and relaxation in our Cozy Standard Room. This spacious 300 sq ft room is furnished with modern amenities and features a comfortable bed to ensure a restful night's sleep. Enjoy your stay at an affordable rate of $100 per night. Plus, get a special offer of 10% off for a 3-night stay.",
+    "price_per_night": 100,
+    "room_size": "300 sq ft",
+    "special_offer": "10% off for a 3-night stay"
+  },
+  {
+    "room_id": 2,
+    "room_name": "Luxury Suite",
+    "room_image": "https://i.ibb.co/qxKMth6/2.jpg",
+    "room_description": "Experience opulence and breathtaking city views in our Luxury Suite. This 600 sq ft suite is designed for ultimate comfort and luxury. Enjoy your stay at a rate of $300 per night, and we include a complimentary breakfast for an even more delightful experience.",
+    "price_per_night": 300,
+    "room_size": "600 sq ft",
+    "special_offer": "Free breakfast included"
+  },
+  {
+    "room_id": 3,
+    "room_name": "Ocean View Room",
+    "room_image": "https://i.ibb.co/wWC2gvW/3.jpg",
+    "room_description": "Relish the calming ocean view from our Ocean View Room. This 400 sq ft room provides a serene atmosphere for your stay. Enjoy the soothing ocean breeze at a rate of $180 per night and receive a complimentary bottle of champagne as a special offer.",
+    "price_per_night": 180,
+    "room_size": "400 sq ft",
+    "special_offer": "Complimentary bottle of champagne"
+  },
+  {
+    "room_id": 4,
+    "room_name": "Deluxe Garden Room",
+    "room_image": "https://i.ibb.co/y4RzGNH/4.jpg",
+    "room_description": "Escape to our Deluxe Garden Room and enjoy a spacious 350 sq ft room overlooking our lush garden. Experience tranquility and relaxation at a rate of $130 per night. Plus, avail a special offer of 15% off for direct bookings.",
+    "price_per_night": 130,
+    "room_size": "350 sq ft",
+    "special_offer": "15% off for direct bookings"
+  },
+  {
+    "room_id": 5,
+    "room_name": "Family Suite",
+    "room_image": "https://i.ibb.co/VHr7D5h/5.jpg",
+    "room_description": "Our Family Suite is perfect for families, featuring a spacious 550 sq ft room with a separate living area. Enjoy quality family time at a rate of $250 per night, and the best part is, children stay for free!",
+    "price_per_night": 250,
+    "room_size": "550 sq ft",
+    "special_offer": "Children stay for free"
+  },
+  {
+    "room_id": 6,
+    "room_name": "Mountain View Retreat",
+    "room_image": "https://i.ibb.co/C9q2b9J/6.jpg",
+    "room_description": "Witness breathtaking views of the nearby mountains from our Mountain View Retreat. This 420 sq ft room offers a serene mountain experience at a rate of $190 per night. As a special treat, enjoy a spa discount as our guest.",
+    "price_per_night": 190,
+    "room_size": "420 sq ft",
+    "special_offer": "Spa discount for guests"
+  },
+  {
+    "room_id": 7,
+    "room_name": "Elegant King Suite",
+    "room_image": "https://i.ibb.co/108cfWC/7.jpg",
+    "room_description": "Experience regal luxury in our Elegant King Suite. This 700 sq ft suite features a king-sized bed and a private balcony. Your royal stay awaits at a rate of $350 per night, and you have the option of a late checkout as a special offer.",
+    "price_per_night": 350,
+    "room_size": "700 sq ft",
+    "special_offer": "Late checkout available"
+  },
+  {
+    "room_id": 8,
+    "room_name": "Riverside Cabin",
+    "room_image": "https://i.ibb.co/RSP5syz/8.jpg",
+    "room_description": "Enjoy a cozy and rustic experience in our Riverside Cabin. Nestled by the riverside, this 320 sq ft cabin offers a serene getaway at a rate of $160 per night. We include a campfire night as a special offer for a memorable experience.",
+    "price_per_night": 160,
+    "room_size": "320 sq ft",
+    "special_offer": "Campfire night included"
+  },
+  {
+    "room_id": 9,
+    "room_name": "Executive Suite",
+    "room_image": "https://i.ibb.co/W6JDqv4/9.jpg",
+    "room_description": "Indulge in high-end luxury with a private jacuzzi in our Executive Suite. This 750 sq ft suite offers the ultimate in relaxation and comfort at a rate of $400 per night. As a special treat, enjoy a complimentary spa treatment during your stay.",
+    "price_per_night": 400,
+    "room_size": "750 sq ft",
+    "special_offer": "Complimentary spa treatment"
+  },
+  {
+    "room_id": 10,
+    "room_name": "Classic Double Room",
+    "room_image": "https://i.ibb.co/rb58DcY/10.jpg",
+    "room_description": "Our Classic Double Room is designed with comfort in mind, featuring two double beds and a welcoming atmosphere. Enjoy your stay at a rate of $120 per night and take advantage of free Wi-Fi as a special offer.",
+    "price_per_night": 120,
+    "room_size": "340 sq ft",
+    "special_offer": "Free Wi-Fi"
+  },
+  {
+    "room_id": 11,
+    "room_name": "Penthouse Suite",
+    "room_image": "https://i.ibb.co/WVLzb0C/11.jpg",
+    "room_description": "Experience extravagance in our Penthouse Suite, boasting panoramic city views. This 1000 sq ft suite is the epitome of luxury and is available at a rate of $500 per night. Enjoy private butler service as a special offer.",
+    "price_per_night": 500,
+    "room_size": "1000 sq ft",
+    "special_offer": "Private butler service"
+  },
+  {
+    "room_id": 12,
+    "room_name": "Seaside Villa",
+    "room_image": "https://i.ibb.co/cT7zSrZ/12.jpg",
+    "room_description": "Bask in the lap of luxury with our Seaside Villa, located right by the beach. This 800 sq ft villa offers the perfect beachfront experience at a rate of $450 per night. Enjoy a beachfront barbecue party as a special offer.",
+    "price_per_night": 450,
+    "room_size": "800 sq ft",
+    "special_offer": "Beachfront barbecue party"
+  },
+  {
+    "room_id": 13,
+    "room_name": "Charming Twin Room",
+    "room_image": "https://i.ibb.co/7YTqNws/13.jpg",
+    "room_description": "Discover charm and comfort in our Charming Twin Room. This 360 sq ft room features twin beds and a balcony for a delightful stay. Experience it all at a rate of $130 per night, and we'll welcome you with a complimentary drink upon arrival.",
+    "price_per_night": 130,
+    "room_size": "360 sq ft",
+    "special_offer": "Welcome drink on arrival"
+  },
+  {
+    "room_id": 14,
+    "room_name": "Ski Chalet",
+    "room_image": "https://i.ibb.co/cNNdB0Z/14.jpg",
+    "room_description": "Embrace the winter wonderland in our cozy Ski Chalet. This 400 sq ft chalet is perfect for ski enthusiasts. Enjoy a comfortable stay at a rate of $180 per night, and take advantage of a discount on ski equipment rental as a special offer.",
+    "price_per_night": 180,
+    "room_size": "400 sq ft",
+    "special_offer": "Ski equipment rental discount"
+  },
+  {
+    "room_id": 15,
+    "room_name": "Artistic Loft",
+    "room_image": "https://i.ibb.co/8XyxzCW/15.jpg",
+    "room_description": "Experience a unique and creative ambiance in our Artistic Loft. This 380 sq ft loft is decorated with artistic flair and offers an open and spacious layout. Enjoy your stay at a rate of $160 per night, and we'll provide you with complimentary tickets to an art gallery as a special offer.",
+    "price_per_night": 160,
+    "room_size": "380 sq ft",
+    "special_offer": "Complimentary art gallery tickets"
+  },
+  {
+    "room_id": 16,
+    "room_name": "Colonial Suite",
+    "room_image": "https://i.ibb.co/3MW7Wmp/16.jpg",
+    "room_description": "Step back in time and experience historical charm in our Colonial Suite. This 550 sq ft suite is designed with a colonial-style decor for a unique experience. Enjoy your stay at a rate of $300 per night and take a guided historical tour as a special offer.",
+    "price_per_night": 300,
+    "room_size": "550 sq ft",
+    "special_offer": "Guided historical tour"
+  },
+  {
+    "room_id": 17,
+    "room_name": "Garden View Room",
+    "room_image": "https://i.ibb.co/sFGYTQz/17.jpg",
+    "room_description": "Unwind and relax in our Garden View Room, offering a tranquil view of lush gardens. This 330 sq ft room provides a peaceful atmosphere for your stay at a rate of $140 per night. We'll even prepare a garden picnic basket for you as a special offer.",
+    "price_per_night": 140,
+    "room_size": "330 sq ft",
+    "special_offer": "Garden picnic basket"
+  },
+  {
+    "room_id": 18,
+    "room_name": "Rustic Cabin",
+    "room_image": "https://i.ibb.co/nL2cpB0/18.jpg",
+    "room_description": "Escape to nature and enjoy a peaceful getaway in our Rustic Cabin. This 350 sq ft cabin is nestled in the woods, offering a serene retreat. Experience it all at a rate of $170 per night, and we'll provide you with a hiking trail map as a special offer.",
+    "price_per_night": 170,
+    "room_size": "350 sq ft",
+    "special_offer": "Hiking trail map provided"
+  },
+  {
+    "room_id": 19,
+    "room_name": "Economy Single Room",
+    "room_image": "https://i.ibb.co/GnQK6WQ/19.jpg",
+    "room_description": "Experience affordability without compromising comfort in our Economy Single Room. This 250 sq ft room is equipped with essential amenities for a cozy stay at a rate of $80 per night. Enjoy breakfast at a discounted rate as a special offer.",
+    "price_per_night": 80,
+    "room_size": "250 sq ft",
+    "special_offer": "Breakfast at a discounted rate"
+  },
+  {
+    "room_id": 20,
+    "room_name": "Honeymoon Suite",
+    "room_image": "https://i.ibb.co/093SvXX/20.jpg",
+    "room_description": "Celebrate a special occasion in our romantic Honeymoon Suite, designed for couples in love. This 500 sq ft suite provides a romantic atmosphere at a rate of $270 per night. Enjoy a rose petal turn-down service as a special offer for an unforgettable experience.",
+    "price_per_night": 270,
+    "room_size": "500 sq ft",
+    "special_offer": "Rose petal turn-down service"
+  }
+]
+[
+  {
+    "room_id": 1,
+    "room_name": "Cozy Standard Room",
+    "room_image": "https://i.ibb.co/kBs0Nw8/1.jpg",
+    "room_description": "Indulge in comfort and relaxation in our Cozy Standard Room. This spacious 300 sq ft room is furnished with modern amenities and features a comfortable bed to ensure a restful night's sleep. Enjoy your stay at an affordable rate of $100 per night. Plus, get a special offer of 10% off for a 3-night stay.",
+    "price_per_night": 100,
+    "room_size": "300 sq ft",
+    "special_offer": "10% off for a 3-night stay",
+    "available_rooms": 4
+  },
+  {
+    "room_id": 2,
+    "room_name": "Luxury Suite",
+    "room_image": "https://i.ibb.co/qxKMth6/2.jpg",
+    "room_description": "Experience opulence and breathtaking city views in our Luxury Suite. This 600 sq ft suite is designed for ultimate comfort and luxury. Enjoy your stay at a rate of $300 per night, and we include a complimentary breakfast for an even more delightful experience.",
+    "price_per_night": 300,
+    "room_size": "600 sq ft",
+    "special_offer": "Free breakfast included",
+    "available_rooms": 5
+  },
+  {
+    "room_id": 3,
+    "room_name": "Ocean View Room",
+    "room_image": "https://i.ibb.co/wWC2gvW/3.jpg",
+    "room_description": "Relish the calming ocean view from our Ocean View Room. This 400 sq ft room provides a serene atmosphere for your stay. Enjoy the soothing ocean breeze at a rate of $180 per night and receive a complimentary bottle of champagne as a special offer.",
+    "price_per_night": 180,
+    "room_size": "400 sq ft",
+    "special_offer": "Complimentary bottle of champagne",
+    "available_rooms": 3
+  },
+  {
+    "room_id": 4,
+    "room_name": "Deluxe Garden Room",
+    "room_image": "https://i.ibb.co/y4RzGNH/4.jpg",
+    "room_description": "Escape to our Deluxe Garden Room and enjoy a spacious 350 sq ft room overlooking our lush garden. Experience tranquility and relaxation at a rate of $130 per night. Plus, avail a special offer of 15% off for direct bookings.",
+    "price_per_night": 130,
+    "room_size": "350 sq ft",
+    "special_offer": "15% off for direct bookings",
+    "available_rooms": 5
+  },
+  {
+    "room_id": 5,
+    "room_name": "Family Suite",
+    "room_image": "https://i.ibb.co/Jt-d-31gq/5.jpg",
+    "room_description": "Our Family Suite is perfect for families, featuring a spacious 550 sq ft room with a separate living area. Enjoy quality family time at a rate of $250 per night, and the best part is, children stay for free!",
+    "price_per_night": 250,
+    "room_size": "550 sq ft",
+    "special_offer": "Children stay for free",
+    "available_rooms": 4
+  },
+  {
+    "room_id": 6,
+    "room_name": "Mountain View Retreat",
+    "room_image": "https://i.ibb.co/C9q2b9J/6.jpg",
+    "room_description": "Witness breathtaking views of the nearby mountains from our Mountain View Retreat. This 420 sq ft room offers a serene mountain experience at a rate of $190 per night. As a special treat, enjoy a spa discount as our guest.",
+    "price_per_night": 190,
+    "room_size": "420 sq ft",
+    "special_offer": "Spa discount for guests",
+    "available_rooms": 7
+  },
+  {
+    "room_id": 7,
+    "room_name": "Elegant King Suite",
+    "room_image": "https://i.ibb.co/108cfWC/7.jpg",
+    "room_description": "Experience regal luxury in our Elegant King Suite. This 700 sq ft suite features a king-sized bed and a private balcony. Your royal stay awaits at a rate of $350 per night, and you have the option of a late checkout as a special offer.",
+    "price_per_night": 350,
+    "room_size": "700 sq ft",
+    "special_offer": "Late checkout available",
+    "available_rooms": 3
+  },
+  {
+    "room_id": 8,
+    "room_name": "Riverside Cabin",
+    "room_image": "https://i.ibb.co/RSP5syz/8.jpg",
+    "room_description": "Enjoy a cozy and rustic experience in our Riverside Cabin. Nestled by the riverside, this 320 sq ft cabin offers a serene getaway at a rate of $160 per night. We include a campfire night as a special offer for a memorable experience.",
+    "price_per_night": 160,
+    "room_size": "320 sq ft",
+    "special_offer": "Campfire night included",
+    "available_rooms": 9
+  },
+  {
+    "room_id": 9,
+    "room_name": "Executive Suite",
+    "room_image": "https://i.ibb.co/W6JDqv4/9.jpg",
+    "room_description": "Indulge in high-end luxury with a private jacuzzi in our Executive Suite. This 750 sq ft suite offers the ultimate in relaxation and comfort at a rate of $400 per night. As a special treat, enjoy a complimentary spa treatment during your stay.",
+    "price_per_night": 400,
+    "room_size": "750 sq ft",
+    "special_offer": "Complimentary spa treatment",
+    "available_rooms": 2
+  },
+  {
+    "room_id": 10,
+    "room_name": "Classic Double Room",
+    "room_image": "https://i.ibb.co/rb58DcY/10.jpg",
+    "room_description": "Our Classic Double Room is designed with comfort in mind, featuring two double beds and a welcoming atmosphere. Enjoy your stay at a rate of $120 per night and take advantage of free Wi-Fi as a special offer.",
+    "price_per_night": 120,
+    "room_size": "340 sq ft",
+    "special_offer": "Free Wi-Fi",
+    "available_rooms": 5
+  },
+  {
+    "room_id": 11,
+    "room_name": "Penthouse Suite",
+    "room_image": "https://i.ibb.co/WVLzb0C/11.jpg",
+    "room_description": "Experience extravagance in our Penthouse Suite, boasting panoramic city views. This 1000 sq ft suite is the epitome of luxury and is available at a rate of $500 per night. Enjoy private butler service as a special offer.",
+    "price_per_night": 500,
+    "room_size": "1000 sq ft",
+    "special_offer": "Private butler service",
+    "available_rooms": 1
+  },
+  {
+    "room_id": 12,
+    "room_name": "Seaside Villa",
+    "room_image": "https://i.ibb.co/cT7zSrZ/12.jpg",
+    "room_description": "Bask in the lap of luxury with our Seaside Villa, located right by the beach. This 800 sq ft villa offers the perfect beachfront experience at a rate of $450 per night. Enjoy a beachfront barbecue party as a special offer.",
+    "price_per_night": 450,
+    "room_size": "800 sq ft",
+    "special_offer": "Beachfront barbecue party",
+    "available_rooms": 3
+  },
+  {
+    "room_id": 13,
+    "room_name": "Charming Twin Room",
+    "room_image": "https://i.ibb.co/7YTqNws/13.jpg",
+    "room_description": "Discover charm and comfort in our Charming Twin Room. This 360 sq ft room features twin beds and a balcony for a delightful stay. Experience it all at a rate of $130 per night, and we'll welcome you with a complimentary drink upon arrival.",
+    "price_per_night": 130,
+    "room_size": "360 sq ft",
+    "special_offer": "Welcome drink on arrival",
+    "available_rooms": 5
+  },
+  {
+    "room_id": 14,
+    "room_name": "Ski Chalet",
+    "room_image": "https://i.ibb.co/cNNdB0Z/14.jpg",
+    "room_description": "Embrace the winter wonderland in our cozy Ski Chalet. This 400 sq ft chalet is perfect for ski enthusiasts. Enjoy a comfortable stay at a rate of $180 per night, and take advantage of a discount on ski equipment rental as a special offer.",
+    "price_per_night": 180,
+    "room_size": "400 sq ft",
+    "special_offer": "Ski equipment rental discount",
+    "available_rooms": 8
+  },
+  {
+    "room_id": 15,
+    "room_name": "Artistic Loft",
+    "room_image": "https://i.ibb.co/8XyxzCW/15.jpg",
+    "room_description": "Experience a unique and creative ambiance in our Artistic Loft. This 380 sq ft loft is decorated with artistic flair and offers an open and spacious layout. Enjoy your stay at a rate of $160 per night, and we'll provide you with complimentary tickets to an art gallery as a special offer.",
+    "price_per_night": 160,
+    "room_size": "380 sq ft",
+    "special_offer": "Complimentary art gallery tickets",
+    "available_rooms": 6
+  },
+  {
+    "room_id": 16,
+    "room_name": "Colonial Suite",
+    "room_image": "https://i.ibb.co/3MW7Wmp/16.jpg",
+    "room_description": "Step back in time and experience historical charm in our Colonial Suite. This 550 sq ft suite is designed with a colonial-style decor for a unique experience. Enjoy your stay at a rate of $300 per night and take a guided historical tour as a special offer.",
+    "price_per_night": 300,
+    "room_size": "550 sq ft",
+    "special_offer": "Guided historical tour",
+    "available_rooms": 2
+  },
+  {
+    "room_id": 17,
+    "room_name": "Garden View Room",
+    "room_image": "https://i.ibb.co/sFGYTQz/17.jpg",
+    "room_description": "Unwind and relax in our Garden View Room, offering a tranquil view of lush gardens. This 330 sq ft room provides a peaceful atmosphere for your stay at a rate of $140 per night. We'll even prepare a garden picnic basket for you as a special offer.",
+    "price_per_night": 140,
+    "room_size": "330 sq ft",
+    "special_offer": "Garden picnic basket",
+    "available_rooms": 4
+  },
+  {
+    "room_id": 18,
+    "room_name": "Rustic Cabin",
+    "room_image": "https://i.ibb.co/nL2cpB0/18.jpg",
+    "room_description": "Escape to nature and enjoy a peaceful getaway in our Rustic Cabin. This 350 sq ft cabin is nestled in the woods, offering a serene retreat. Experience it all at a rate of $170 per night, and we'll provide you with a hiking trail map as a special offer.",
+    "price_per_night": 170,
+    "room_size": "350 sq ft",
+    "special_offer": "Hiking trail map provided",
+    "available_rooms": 7
+  },
+  {
+    "room_id": 19,
+    "room_name": "Economy Single Room",
+    "room_image": "https://i.ibb.co/GnQK6WQ/19.jpg",
+    "room_description": "Experience affordability without compromising comfort in our Economy Single Room. This 250 sq ft room is equipped with essential amenities for a cozy stay at a rate of $80 per night. Enjoy breakfast at a discounted rate as a special offer.",
+    "price_per_night": 80,
+    "room_size": "250 sq ft",
+    "special_offer": "Breakfast at a discounted rate",
+    "available_rooms": 10
+  },
+  {
+    "room_id": 20,
+    "room_name": "Honeymoon Suite",
+    "room_image": "https://i.ibb.co/093SvXX/20.jpg",
+    "room_description": "Celebrate a special occasion in our romantic Honeymoon Suite, designed for couples in love. This 500 sq ft suite provides a romantic atmosphere at a rate of $270 per night. Enjoy a rose petal turn-down service as a special offer for an unforgettable experience.",
+    "price_per_night": 270,
+    "room_size": "500 sq ft",
+    "special_offer": "Rose petal turn-down service",
+    "available_rooms": 2
+  }
+]
