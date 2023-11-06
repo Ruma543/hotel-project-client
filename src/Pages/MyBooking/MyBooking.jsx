@@ -4,6 +4,7 @@ import useAxiosSecure from '../../Hook/useAxiosSecure';
 import { useEffect } from 'react';
 import useAuth from '../../Hook/useAuth';
 import Swal from 'sweetalert2';
+import { Link } from 'react-router-dom';
 
 const MyBooking = () => {
   const { user } = useAuth();
@@ -53,7 +54,6 @@ const MyBooking = () => {
       ) : (
         <div>
           <h3> Your Booking:{bookings.length}</h3>
-
           <div className="space-y-5">
             {bookings.map(item => (
               <div className="grid grid-cols-2 " key={item._id}>
@@ -63,7 +63,12 @@ const MyBooking = () => {
                   <h3>Customer Name {item.customerName}</h3>
                   <h3>Booking Date: {item.date}</h3>
                   <div>
-                    <button className="btn btn-primary">Update Date</button>
+                    <Link to={`/update/${item._id}`}>
+                      <button className="btn btn-primary">Update Date</button>
+                    </Link>
+                    <Link to={`/review/${item._id}`}>
+                      <button className="btn btn-primary">Review</button>
+                    </Link>
                     <button
                       onClick={() => handleDelete(item._id)}
                       className="btn btn-error"

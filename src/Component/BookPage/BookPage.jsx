@@ -29,13 +29,13 @@ const BookPage = () => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const name = form.get('name');
-    const review = form.get('review');
+    // const review = form.get('review');
     const quantity = form.get('quantity');
     const email = form.get('email');
     const date = form.get('date');
     const bookUpdate = {
       customerName: name,
-      review: review,
+      // review: review,
       available_rooms: available_rooms - quantity,
       email: email,
       date: date,
@@ -127,7 +127,7 @@ const BookPage = () => {
 
           {/*3rd description, */}
         </div>
-        <div className="flex flex-col space-y-4">
+        {/* <div className="flex flex-col space-y-4">
           <label className=" text-xl text-white font-semibold text-left ">
             Customer Review
           </label>
@@ -138,7 +138,7 @@ const BookPage = () => {
             // defaultValue={price_per_night}
             className="w-full rounded-lg px-4 py-2 outline-0"
           />
-        </div>
+        </div> */}
 
         {/* 4th image */}
 

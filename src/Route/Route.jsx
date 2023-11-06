@@ -10,6 +10,8 @@ import AddRoom from '../Pages/AddRooms/AddRoom';
 import RoomDetails from '../Pages/RoomDetails/RoomDetails';
 import BookPage from '../Component/BookPage/BookPage';
 import PrivateRoute from './PrivateRoute';
+import UpdateDate from '../Pages/UpdateDate/UpdateDate';
+import ReviewPage from '../Pages/ReviewPage/ReviewPage';
 
 const Route = createBrowserRouter([
   {
@@ -44,6 +46,18 @@ const Route = createBrowserRouter([
       {
         path: '/myBooking',
         element: <MyBooking></MyBooking>,
+      },
+      {
+        path: '/update/:id',
+        element: <UpdateDate></UpdateDate>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/bookings/${params.id}`),
+      },
+      {
+        path: '/review/:id',
+        element: <ReviewPage></ReviewPage>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/bookings/${params.id}`),
       },
       {
         path: '/addRoom',
