@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../../Hook/useAuth';
 import Swal from 'sweetalert2';
 import GoogleLogin from './GoogleLogin';
+import PageTitle from '../../Component/PageTitle/PageTitle';
 
 const Login = () => {
   const { userLogin } = useAuth();
@@ -38,6 +39,7 @@ const Login = () => {
 
   return (
     <div>
+      <PageTitle title="login page"></PageTitle>
       <div>
         <h3 className="text-2xl font-serif text-center font-semibold mt-10 mb-3">
           Please Login

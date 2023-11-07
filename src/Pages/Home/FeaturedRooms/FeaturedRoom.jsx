@@ -17,6 +17,7 @@ const FeaturedRoom = () => {
   console.log(featuredRooms);
   return (
     <div className="w-11/12 mx-auto">
+      <h3 className="">Our Featured Rooms</h3>
       <div className="grid grid-cols-3 gap-5">
         {featuredRooms?.map(item => (
           <div key={item._id} className="relative p-5 rounded-lg shadow-lg">

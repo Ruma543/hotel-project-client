@@ -5,6 +5,7 @@ import useAxiosSecure from '../../Hook/useAxiosSecure';
 import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 import { FcPrevious, FcNext } from 'react-icons/fc';
+import PageTitle from '../../Component/PageTitle/PageTitle';
 
 const Rooms = () => {
   const [price, setPrice] = useState('');
@@ -43,6 +44,7 @@ const Rooms = () => {
   };
   return (
     <div className="w-11/12 mx-auto my-6">
+      <PageTitle title="rooms page"></PageTitle>
       <div className="flex justify-between">
         <h3 className="text-3xl font-semibold">
           Our Available Room:{data?.data?.total}

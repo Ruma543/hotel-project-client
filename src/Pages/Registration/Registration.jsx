@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import useAuth from '../../Hook/useAuth';
+import PageTitle from '../../Component/PageTitle/PageTitle';
 
 const Registration = () => {
   const { userCreate, profileUpdate } = useAuth();
@@ -61,6 +62,7 @@ const Registration = () => {
   };
   return (
     <div>
+      <PageTitle title="registration"></PageTitle>
       <div>
         <h3 className="text-2xl font-serif  text-center font-semibold mt-1 mb-3">
           Please Register

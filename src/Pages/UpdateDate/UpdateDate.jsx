@@ -5,6 +5,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { useState } from 'react';
 import useAxiosSecure from '../../Hook/useAxiosSecure';
+import PageTitle from '../../Component/PageTitle/PageTitle';
 
 // const url = 'https://i.ibb.co/5Wv48dg/updateimage.jpg';
 const UpdateDate = () => {
@@ -31,6 +32,7 @@ const UpdateDate = () => {
 
   return (
     <div>
+      <PageTitle title="Update Date page"></PageTitle>
       {loading ? (
         <p>loading...</p>
       ) : (

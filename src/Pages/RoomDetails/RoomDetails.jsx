@@ -4,6 +4,7 @@ import Marquee from 'react-fast-marquee';
 import BookPage from '../../Component/BookPage/BookPage';
 import useAuth from '../../Hook/useAuth';
 import useAxiosSecure from '../../Hook/useAxiosSecure';
+import PageTitle from '../../Component/PageTitle/PageTitle';
 
 const RoomDetails = () => {
   const roomDetails = useLoaderData();
@@ -27,17 +28,17 @@ const RoomDetails = () => {
   useEffect(() => {
     axiosSecure.get(url, { withCredentials: true }).then(res => {
       const reviews = res.data || [];
-      const filteredReviews = reviews.filter(
-        item => item.roomId === roomDetails.roomId
-      );
+      const filteredReviews = reviews.filter(item => item.roomId == _id);
       setUserReview(filteredReviews);
     });
   }, [url, axiosSecure, roomId]);
+  console.log(roomId);
   // console.log(filterReview);
   console.log(userReview);
   console.log(roomDetails);
   return (
     <div className="w-11/12 mx-auto">
+      <PageTitle title="room details page"></PageTitle>
       <img
         className="w-11/12 mx-auto max-h-[70vh] rounded-b-lg"
         src={room_image}
@@ -48,7 +49,6 @@ const RoomDetails = () => {
       {userReview.length > 0 ? (
         userReview?.map(item => (
           <div key={item._id}>
-            {' '}
             <h3>{item.review}</h3>
             <h3>{item.date}</h3>
           </div>

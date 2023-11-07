@@ -2,6 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import useAuth from '../../Hook/useAuth';
 import useAxiosSecure from '../../Hook/useAxiosSecure';
+import PageTitle from '../../Component/PageTitle/PageTitle';
 
 // const url = 'https://i.ibb.co/Dz2Fy59/review-image.jpg';
 const ReviewPage = () => {
@@ -32,6 +33,7 @@ const ReviewPage = () => {
   };
   return (
     <div>
+      <PageTitle title="review page"></PageTitle>
       {loading ? (
         <p>loading....</p>
       ) : (
