@@ -62,7 +62,7 @@ const Navbar = () => {
   const [fix, setFix] = useState(false);
   useEffect(() => {
     const setFixed = () => {
-      if (window.scrollY > 202) {
+      if (window.scrollY > 500) {
         setFix(true);
       } else {
         setFix(false);
@@ -79,7 +79,7 @@ const Navbar = () => {
         className={
           fix
             ? 'transition duration-150 ease-in-out h-20 bg-blue-300 flex   '
-            : ' h-20 bg-blue-600 flex  '
+            : ' h-20 bg-orange-900/50 flex  '
         }
       >
         <div className="navbar-start">
