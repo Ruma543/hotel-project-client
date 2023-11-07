@@ -20,13 +20,15 @@ const UpdateDate = () => {
     const date = form.get('date');
     const updateDate = { name, date };
     console.log(updateDate);
+
+    axiosSecure
+      .put(`/bookings/s/${_id}`, updateDate)
+      .then(res => console.log(res.data))
+      .catch(error => {
+        console.error('An error occurred:', error);
+      });
   };
-  axiosSecure
-    .patch(`/bookings/s/${_id}`, updateDate)
-    .then(res => console.log(res.data))
-    .catch(error => {
-      console.error('An error occurred:', error);
-    });
+
   return (
     <div>
       {loading ? (

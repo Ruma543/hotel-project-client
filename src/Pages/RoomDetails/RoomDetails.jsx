@@ -22,21 +22,15 @@ const RoomDetails = () => {
     available_rooms,
   } = roomDetails || {};
   // console.log(Object.keys(roomDetails).join(','));
-  // const handleBook = e => {
-  //   console.log(_id);
-  //   const form = new FormData(e.currentTarget);
-  //   const date = form.get('date');
-  //   console.log(date);
-  // };
+
   const url = '/userReview';
   useEffect(() => {
     axiosSecure.get(url, { withCredentials: true }).then(res => {
       const reviews = res.data || [];
-      const filteredReviews = reviews.filter(item => item.roomId === roomId);
+      const filteredReviews = reviews.filter(
+        item => item.roomId === roomDetails.roomId
+      );
       setUserReview(filteredReviews);
-      // console.log(res.data);
-      // const filterReview = res.data?.filter(item => item.roomId !== roomId);
-      // setUserReview(filterReview);
     });
   }, [url, axiosSecure, roomId]);
   // console.log(filterReview);
@@ -51,9 +45,17 @@ const RoomDetails = () => {
       />
       {/* <h3>{userReview.review}</h3> */}
       <h3> {userReview?.length}</h3>
-      {userReview?.map(item => (
-        <h3 key={item._id}>{item.review}</h3>
-      ))}
+      {userReview.length > 0 ? (
+        userReview?.map(item => (
+          <div key={item._id}>
+            {' '}
+            <h3>{item.review}</h3>
+            <h3>{item.date}</h3>
+          </div>
+        ))
+      ) : (
+        <p>no review....</p>
+      )}
       <div className=" w-2/5 mx-auto my-5">
         <Marquee>
           <h3 className="text-blue-600 font-semibold font-serif ">

@@ -16,27 +16,19 @@ const ReviewPage = () => {
     const name = form.get('name');
     const rating = form.get('rating');
     const review = form.get('review');
-    const feedback = { name, rating, review, room_name, roomId };
+    const feedback = {
+      name,
+      rating,
+      review,
+      room_name,
+      roomId,
+      date: new Date(),
+    };
     console.log(feedback);
 
     axiosSecure
       .post('/userReview', feedback)
       .then(res => console.log(res.data));
-
-    // axiosSecure
-    //   .post('/services', newRoom, {
-    //     headers: {
-    //       'content-type': 'application/json',
-    //     },
-    //   })
-    //   .then(res => console.log(res.data));
-
-    // axiosSecure
-    //   .patch(`/services/s/${roomId}`, feedback)
-    //   .then(res => console.log(res.data))
-    //   .catch(error => {
-    //     console.error('An error occurred:', error);
-    //   });
   };
   return (
     <div>
