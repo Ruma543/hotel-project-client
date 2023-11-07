@@ -54,13 +54,15 @@ const AuthProvider = ({ children }) => {
       setLoading(false);
       if (currentUser) {
         axios
-          .post('http://localhost:5000/jwt', logUser, { withCredentials: true })
+          .post('https://hotel-project-server.vercel.app/jwt', logUser, {
+            withCredentials: true,
+          })
           .then(res => {
             console.log('token response', res.data);
           });
       } else {
         axios
-          .post('http://localhost:5000/logout', logUser, {
+          .post('https://hotel-project-server.vercel.app/logout', logUser, {
             withCredentials: true,
           })
           .then(res => console.log(res.data));

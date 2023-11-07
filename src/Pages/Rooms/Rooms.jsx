@@ -43,19 +43,14 @@ const Rooms = () => {
     }
   };
   return (
-    <div className="w-11/12 mx-auto my-6">
+    <div className="w-11/12 mx-auto mb-6 lg:mt-20">
       <PageTitle title="rooms page"></PageTitle>
       <div className="flex justify-between">
-        <h3 className="text-3xl font-semibold">
+        <h3 className="text-3xl font-semibold text-center">
           Our Available Room:{data?.data?.total}
         </h3>
 
         <div className="text-right py-4">
-          {/* <label className="label text-right">
-            <span className="text-2xt font-semibold ">
-              Choose your Room by price range
-            </span>
-          </label> */}
           <select onChange={e => setPrice(e.target.value)} name="" id="">
             <option value="">Select One</option>
             <option value="asc">High to low</option>

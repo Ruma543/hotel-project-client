@@ -31,7 +31,7 @@ const Navbar = () => {
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
-            isActive ? 'text-white font-semibold' : isPending ? 'pending' : ''
+            isActive ? 'text-white font-semibold ' : isPending ? 'pending' : ''
           }
         >
           Home
@@ -41,7 +41,7 @@ const Navbar = () => {
         <NavLink
           to="/rooms"
           className={({ isActive, isPending }) =>
-            isActive ? 'text-white font-semibold' : isPending ? 'pending' : ''
+            isActive ? 'text-white font-semibold ' : isPending ? 'pending' : ''
           }
         >
           Rooms
@@ -51,7 +51,7 @@ const Navbar = () => {
         <NavLink
           to="/myBooking"
           className={({ isActive, isPending }) =>
-            isActive ? 'text-white font-semibold' : isPending ? 'pending' : ''
+            isActive ? 'text-white font-semibold ' : isPending ? 'pending' : ''
           }
         >
           My Booking
@@ -78,8 +78,8 @@ const Navbar = () => {
       <div
         className={
           fix
-            ? 'transition duration-150 ease-in-out h-20 lg:px-6 bg-blue-300 flex navbar   '
-            : ' h-20 bg-orange-900/50 flex navbar lg:px-6 '
+            ? 'transition duration-150 ease-in-out h-20 lg:px-6 bg-orange-300 flex navbar   '
+            : ' h-20 bg-orange-700/25 flex navbar lg:px-6 '
         }
       >
         <div className="navbar-start">
@@ -102,12 +102,14 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box shadow  text-white w-52"
             >
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">Hotel</a>
+          <a className="btn btn-ghost normal-case text-4xl text-white">
+            <span className="text-green-700 text-4xl">Paradise</span> Hotel
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
