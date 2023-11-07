@@ -34,7 +34,19 @@ const UserReview = () => {
             src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
             className="w-full"
           /> */}
-          <h3 className="w-full text-center h-[70vh]">user review</h3>
+          {reviews.map(item => (
+            <div key={item._id} className="flex">
+              <div className="flex flex-col p-5 rounded-lg bg-white">
+                <img
+                  className="w-20 h-20 rounded-full mx-auto "
+                  src={item.image}
+                  alt=""
+                />
+                <h3 className="text-center font-semibold">{item.userName}</h3>
+                <h3 className="text-center">{item.review}</h3>
+              </div>
+            </div>
+          ))}
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" className="btn btn-circle">
               ❮

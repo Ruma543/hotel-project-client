@@ -31,7 +31,7 @@ const Navbar = () => {
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
-            isActive ? 'text-red-500 font-semibold' : isPending ? 'pending' : ''
+            isActive ? 'text-white font-semibold' : isPending ? 'pending' : ''
           }
         >
           Home
@@ -41,7 +41,7 @@ const Navbar = () => {
         <NavLink
           to="/rooms"
           className={({ isActive, isPending }) =>
-            isActive ? 'text-red-500 font-semibold' : isPending ? 'pending' : ''
+            isActive ? 'text-white font-semibold' : isPending ? 'pending' : ''
           }
         >
           Rooms
@@ -51,7 +51,7 @@ const Navbar = () => {
         <NavLink
           to="/myBooking"
           className={({ isActive, isPending }) =>
-            isActive ? 'text-red-500 font-semibold' : isPending ? 'pending' : ''
+            isActive ? 'text-white font-semibold' : isPending ? 'pending' : ''
           }
         >
           My Booking
@@ -78,8 +78,8 @@ const Navbar = () => {
       <div
         className={
           fix
-            ? 'transition duration-150 ease-in-out h-20 bg-blue-300 flex   '
-            : ' h-20 bg-orange-900/50 flex  '
+            ? 'transition duration-150 ease-in-out h-20 lg:px-6 bg-blue-300 flex navbar   '
+            : ' h-20 bg-orange-900/50 flex navbar lg:px-6 '
         }
       >
         <div className="navbar-start">
