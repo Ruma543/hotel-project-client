@@ -3,13 +3,13 @@ const event3 = 'https://i.ibb.co/nL2cpB0/18.jpg';
 const ContactUs = () => {
   return (
     <div
-      className="mt-20 lg:h-[80vh] w-3/5 mx-auto"
+      className="mt-20 lg:h-[80vh] lg:w-3/5 w-11/12 mx-auto"
       style={{
         backgroundImage: `url(${event3})`,
         backgroundSize: 'cover',
       }}
     >
-      <div className="bg-black/70 h-full px-10 grid gap-5 grid-cols-2">
+      <div className="bg-black/70 h-full px-10 grid gap-5 lg:grid-cols-2 grid-cols-1">
         <div></div>
         <div>
           <div className="flex flex-col space-y-4">
@@ -60,8 +60,8 @@ const ContactUs = () => {
           </div>
           <input
             type="submit"
-            value="Submit"
-            className="px-5 py-3 bg-orange-500 text-white text-center my-4"
+            value="Send Message"
+            className="px-5 py-3 bg-orange-500 text-white text-center my-4 hover:bg-orange-700"
           />
         </div>
       </div>

@@ -72,12 +72,12 @@ const Rooms = () => {
       {isLoading ? (
         <div>
           <p>loading....</p>
-          {/* <Lottie
+          <Lottie
             className="w-20 h-20"
             animationData={animation}
             loop={false}
             autoplay={true}
-          /> */}
+          />
         </div>
       ) : (
         <div>
@@ -98,7 +98,7 @@ const Rooms = () => {
                   <h3 className="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
                     {room.room_name}
                   </h3>
-
+                  {/* <h3>{room.rating}</h3> */}
                   <div className="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
                     <span className="font-bold text-gray-800 dark:text-gray-200">
                       Price: ${room.price_per_night}
@@ -113,37 +113,42 @@ const Rooms = () => {
               </div>
             ))}
           </div>
-
-          <div className="flex justify-center">
-            <button onClick={handlePrev}>
-              <span>
-                <FcPrevious></FcPrevious>{' '}
-              </span>
-            </button>
-            {Array(totalPage)
-              .fill(0)
-              .map((item, index) => {
-                const pageNumber = index + 1;
-                return (
-                  <button
-                    key={pageNumber}
-                    onClick={() => setPage(pageNumber)}
-                    className={`${
-                      pageNumber === page
-                        ? 'btn btn-circle btn-primary '
-                        : ' btn btn-circle btn-ghost'
-                    }`}
-                  >
-                    {pageNumber}
-                  </button>
-                );
-              })}
-            <button onClick={handleNext}>
-              <span>
-                <FcNext></FcNext>
-              </span>
-            </button>
-          </div>
+        </div>
+      )}
+      {isLoading ? (
+        <div>
+          <p>loading....</p>
+        </div>
+      ) : (
+        <div className="flex justify-center">
+          <button onClick={handlePrev}>
+            <span>
+              <FcPrevious></FcPrevious>{' '}
+            </span>
+          </button>
+          {Array(totalPage)
+            .fill(0)
+            .map((item, index) => {
+              const pageNumber = index + 1;
+              return (
+                <button
+                  key={pageNumber}
+                  onClick={() => setPage(pageNumber)}
+                  className={`${
+                    pageNumber === page
+                      ? 'btn btn-circle btn-primary '
+                      : ' btn btn-circle btn-ghost'
+                  }`}
+                >
+                  {pageNumber}
+                </button>
+              );
+            })}
+          <button onClick={handleNext}>
+            <span>
+              <FcNext></FcNext>
+            </span>
+          </button>
         </div>
       )}
     </div>

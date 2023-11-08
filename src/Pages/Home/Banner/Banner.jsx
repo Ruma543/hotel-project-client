@@ -1,4 +1,5 @@
 import React from 'react';
+import Lottie from 'react-lottie';
 // import bannerLottie from '../../../assets/Animation - 1699349716959.json';
 // import Lottie from 'react-lottie';
 const Banner = () => {
@@ -31,7 +32,37 @@ const Banner = () => {
             </button>
           </div>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center mt40">
+          <div
+            data-aos="fade-up-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            {' '}
+            <h3 className="text-4xl text-blue-500">
+              welcome to Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Reprehenderit ad at dolorum consequatur facere pariatur
+              labore obcaecati cupiditate sunt quo.
+            </h3>
+          </div>
+          <div data-aos="fade-up-left">
+            <h3>hiiiiiiiiii</h3>
+          </div>
+          {/* <div
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
+          >
+            <h3 className="text-4xl text-blue-500">
+              welcome to Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Reprehenderit ad at dolorum consequatur facere pariatur
+              labore obcaecati cupiditate sunt quo.
+            </h3>
+          </div> */}
+          {/* <Lottie animationData={bannerLottie} loop={true} className="h-full" /> */}
           {/* <Lottie
             className="w-20 h-20"
             animationData={bannerLottie}
