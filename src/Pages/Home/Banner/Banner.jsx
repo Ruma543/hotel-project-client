@@ -1,10 +1,11 @@
 import React from 'react';
-
+// import bannerLottie from '../../../assets/Animation - 1699349716959.json';
+// import Lottie from 'react-lottie';
 const Banner = () => {
-  const img1 = 'https://i.ibb.co/q7GkKPP/Banner1.jpg';
+  // const img1 = 'https://i.ibb.co/q7GkKPP/Banner1.jpg';
   const img2 = 'https://i.ibb.co/Dz2Fy59/review-image.jpg';
-  const img3 = 'https://i.ibb.co/GdzsZPp/banner3.jpg';
-  const img4 = 'https://i.ibb.co/cgLF8Zn/banner4.jpg';
+  // const img3 = 'https://i.ibb.co/GdzsZPp/banner3.jpg';
+  // const img4 = 'https://i.ibb.co/cgLF8Zn/banner4.jpg';
   return (
     <div
       className=" lg:h-[80vh] h-[70vh]  "
@@ -30,7 +31,14 @@ const Banner = () => {
             </button>
           </div>
         </div>
-        <div className="flex justify-center items-center"></div>
+        <div className="flex justify-center items-center">
+          {/* <Lottie
+            className="w-20 h-20"
+            animationData={bannerLottie}
+            loop={false}
+            autoplay={true}
+          /> */}
+        </div>
       </div>
     </div>
   );

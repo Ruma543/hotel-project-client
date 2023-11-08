@@ -18,9 +18,12 @@ const UserReview = () => {
   }, []);
   return (
     <div className="w-11/12 mx-auto ">
-      <h3 className="text-4xl font-semibold font-serif py-7 text-center">
+      <h3 className="lg:text-4xl  text-2xl font-semibold font-serif pt-7  pb-4 text-center">
         Customer Reviews
       </h3>
+      <h2 className="text-sm text-center text-gray-700 pb-6">
+        We believe our service and Quality
+      </h2>
       <div
         className="carousel w-full"
         style={{
@@ -42,6 +45,7 @@ const UserReview = () => {
               <h3 className="font-semibold text-blue-600 text-xl mb-3">
                 Rumana Amin
               </h3>
+              <h3 className="text-blue-600">Rating: 5</h3>
               <h3 className="text-gray-500 h-15">
                 I had an amazing experience at your hotel! The room was clean
                 and spacious, and the staff was incredibly friendly and
@@ -57,6 +61,7 @@ const UserReview = () => {
               <h3 className="font-semibold text-blue-600 text-xl mb-3">
                 Farhana Jahan
               </h3>
+              <h3 className="text-blue-600">Rating: 4</h3>
               <h3 className="text-gray-500 h-15">
                 The food at the hotel restaurant was delicious, and I loved the
                 variety of options they offered. I'll definitely be coming back
@@ -72,6 +77,7 @@ const UserReview = () => {
               <h3 className="font-semibold text-blue-600 text-xl mb-3">
                 Ibrahim Hasan
               </h3>
+              <h3 className="text-blue-600">Rating: 5</h3>
               <h3 className="text-gray-500 h-15">
                 I can't say enough good things about our stay at your hotel. The
                 room was spotless, and the view from our balcony was stunning.
@@ -98,6 +104,7 @@ const UserReview = () => {
               <h3 className="font-semibold text-blue-600 text-xl">
                 Sharah Amin
               </h3>
+              <h3 className="text-blue-600">Rating: 4.5</h3>
               <h3 className="text-gray-500">
                 The location was perfect, and we could easily explore the nearby
                 attractions. The hotel's restaurant had a wonderful menu.
@@ -112,6 +119,7 @@ const UserReview = () => {
               <h3 className="font-semibold text-blue-600 text-xl mb-3">
                 Istiak Haulader
               </h3>
+              <h3 className="text-blue-600">Rating: 5</h3>
               <h3 className="text-gray-500 h-15">
                 The staff was attentive and provided excellent service. The
                 hotel's location made it easy for us to explore the city.
@@ -126,6 +134,7 @@ const UserReview = () => {
               <h3 className="font-semibold text-blue-600 text-xl mb-3">
                 Sonia Jannat
               </h3>
+              <h3 className="text-blue-600">Rating: 5</h3>
               <h3 className="text-gray-500 h-15">
                 I had a wonderful time at your hotel. The room was cozy, and I
                 enjoyed the beautiful sunset from my window every evening.
@@ -152,6 +161,7 @@ const UserReview = () => {
               <h3 className="font-semibold text-blue-600 text-xl mb-3">
                 Rafiq Hasan
               </h3>
+              <h3 className="text-blue-600">Rating: 4</h3>
               <h3 className="text-gray-500 h-15">
                 The hotel's proximity to the shore made it easy for us to take
                 long walks on the beach. The seafood at the hotel's restaurant
@@ -167,6 +177,7 @@ const UserReview = () => {
               <h3 className="font-semibold text-blue-600 text-xl mb-3">
                 Dipty Chowdury
               </h3>
+              <h3 className="text-blue-600">Rating: 5</h3>
               <h3 className="text-gray-500 h-15">
                 I had a memorable stay at your hotel. The room was comfortable
                 and had a balcony with a lovely view of the garden. I enjoyed
@@ -182,6 +193,7 @@ const UserReview = () => {
               <h3 className="font-semibold text-blue-600 text-xl mb-3">
                 Lubana Jahan
               </h3>
+              <h3 className="text-blue-600">Rating: 4</h3>
               <h3 className="text-gray-500 h-15">
                 We were delighted by the culinary offerings at the hotel's
                 restaurant. The chef's special menu was a highlight, and the

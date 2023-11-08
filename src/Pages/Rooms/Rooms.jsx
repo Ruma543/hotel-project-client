@@ -27,12 +27,13 @@ const Rooms = () => {
   });
   if (isLoading) {
     <div>
-      <Lottie
+      <p>loading....</p>
+      {/* <Lottie
         className="w-20 h-20"
         animationData={animation}
         loop={false}
         autoplay={true}
-      />
+      /> */}
     </div>;
   }
 
@@ -70,12 +71,13 @@ const Rooms = () => {
 
       {isLoading ? (
         <div>
-          <Lottie
+          <p>loading....</p>
+          {/* <Lottie
             className="w-20 h-20"
             animationData={animation}
             loop={false}
             autoplay={true}
-          />
+          /> */}
         </div>
       ) : (
         <div>

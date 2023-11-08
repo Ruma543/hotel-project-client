@@ -12,6 +12,7 @@ import BookPage from '../Component/BookPage/BookPage';
 import PrivateRoute from './PrivateRoute';
 import UpdateDate from '../Pages/UpdateDate/UpdateDate';
 import ReviewPage from '../Pages/ReviewPage/ReviewPage';
+import Gallery from '../Pages/Gallery/Gallery';
 
 const Route = createBrowserRouter([
   {
@@ -49,11 +50,23 @@ const Route = createBrowserRouter([
       },
       {
         path: '/myBooking',
-        element: <MyBooking></MyBooking>,
+        element: (
+          <PrivateRoute>
+            <MyBooking></MyBooking>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: '/gallery',
+        element: <Gallery></Gallery>,
       },
       {
         path: '/update/:id',
-        element: <UpdateDate></UpdateDate>,
+        element: (
+          <PrivateRoute>
+            <UpdateDate></UpdateDate>
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(
             `https://hotel-project-server.vercel.app/bookings/${params.id}`
@@ -61,7 +74,11 @@ const Route = createBrowserRouter([
       },
       {
         path: '/review/:id',
-        element: <ReviewPage></ReviewPage>,
+        element: (
+          <PrivateRoute>
+            <ReviewPage></ReviewPage>
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(
             `https://hotel-project-server.vercel.app/bookings/${params.id}`

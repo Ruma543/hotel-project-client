@@ -17,7 +17,7 @@ const FeaturedRoom = () => {
   console.log(featuredRooms);
   return (
     <div className="w-11/12 mx-auto">
-      <h3 className="text-4xl font-serif font-semibold text-center py-6">
+      <h3 className="lg:text-4xl text-2xl font-serif font-semibold text-center py-6">
         Our Featured Rooms
       </h3>
       <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-5">

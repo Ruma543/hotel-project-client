@@ -69,6 +69,20 @@ const Navbar = () => {
           My Booking
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/gallery"
+          className={({ isActive, isPending }) =>
+            isActive
+              ? 'text-red-700 underline lg:text-white font-semibold '
+              : isPending
+              ? 'pending'
+              : ''
+          }
+        >
+          Gallery
+        </NavLink>
+      </li>
     </>
   );
   const [fix, setFix] = useState(false);
@@ -114,7 +128,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box shadow  text-white w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box shadow  text-black w-52"
             >
               {navLinks}
             </ul>
