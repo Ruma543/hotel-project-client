@@ -1,29 +1,28 @@
 ### Different features and functionalities of my website:
 
-1. In this project, users can choose from a variety of available room in home
-   page ,after clicking the room user redirect the room details page.Then user
-   can see the detail information of the room and book the room if the user is
-   logged in our website.
+1. In this project, users can choose from a variety of available rooms on the
+   home page. After clicking on a room, the user is redirected to the room
+   details page. There, they can view detailed information about the room and,
+   if logged into our website, book the room.
 
-2. In the room page user can see the all our room are available and clicking the
-   details button user can see the room details page and see the room details in
-   the details page also see the user reviews of users who are booked in this
-   room previous.
+2. On the room page, users can view all the available rooms. By clicking the
+   "Details" button, users can access the room details page, where they can also
+   read reviews from previous guests who have booked the room.
 
-3. In room details page click the book now button user can book the room if user
-   is logged in otherwise redirect the login page after login then user redirect
-   the book page and after complete the book then user can show his/her booking
-   in the my booking page.
+3. On the room details page, clicking the "Book Now" button allows users to book
+   the room if they are logged in. Otherwise, they are redirected to the login
+   page. After logging in, users can proceed to the booking page and, upon
+   completing the booking, view their booking details in the "My Booking" page.
 
-4. In my booking page user can show the booking details and booking date. user
-   can delete her/his booking before 1 day from the booked date otherwise not
-   cancel and show a alert.user can also update the booking date and show a
-   success sweet alert.
+4. In the "My Booking" page, users can view their booking details and booking
+   dates. They can delete their booking up to 1 day before the booked date;
+   otherwise, they will receive an alert. Users can also update the booking
+   date, and a success message will be displayed using a sweet alert.
 
-5. In my booking page clicking the share reviews button user can redirect the
-   review input page then user input the room review ,after complete the review
-   submit then show a alert ,and this review is updated in the room details page
-   in their individual room.In this project i use react helmet, toast and
-   animation.
+5. In the "My Booking" page, by clicking the "Share Reviews" button, users are
+   redirected to a review input page where they can submit a review for the
+   room. After completing the review submission, a confirmation alert is shown,
+   and the review is updated on the individual room's details page. In this
+   project, I use React Helmet, toast, and animations.
 
-##### client site live link:
+##### client site live link: https://hotel-project-client.web.app
