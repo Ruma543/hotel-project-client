@@ -61,7 +61,7 @@ const Registration = () => {
       .then(error => console.log(error));
   };
   return (
-    <div>
+    <div className="mt-20">
       <PageTitle title="registration"></PageTitle>
       <div>
         <h3 className="text-2xl font-serif  text-center font-semibold mt-1 mb-3">

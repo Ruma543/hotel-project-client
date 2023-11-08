@@ -10,12 +10,12 @@ const img1 =
 // const img3 =
 //   'https://i.ibb.co/yndFV54/sasha-kaunas-x-Ea-Aoiz-NFV8-unsplash.jpg';
 const UserReview = () => {
-  const [reviews, setReviews] = useState([]);
-  useEffect(() => {
-    fetch('https://hotel-project-server.vercel.app/reviews')
-      .then(res => res.json())
-      .then(data => setReviews(data));
-  }, []);
+  // const [reviews, setReviews] = useState([]);
+  // useEffect(() => {
+  //   fetch('https://hotel-project-server.vercel.app/reviews')
+  //     .then(res => res.json())
+  //     .then(data => setReviews(data));
+  // }, []);
   return (
     <div className="w-11/12 mx-auto ">
       <h3 className="lg:text-4xl  text-2xl font-semibold font-serif pt-7  pb-4 text-center">
@@ -164,8 +164,8 @@ const UserReview = () => {
               <h3 className="text-blue-600">Rating: 4</h3>
               <h3 className="text-gray-500 h-15">
                 The hotel's proximity to the shore made it easy for us to take
-                long walks on the beach. The seafood at the hotel's restaurant
-                was fresh and delicious.
+                long walks on the beach. The hotel's restaurant was fresh and
+                delicious.
               </h3>
             </div>
             <div className="py-5 px-6 flex-col flex justify-center rounded-lg   items-center bg-white">
@@ -180,8 +180,7 @@ const UserReview = () => {
               <h3 className="text-blue-600">Rating: 5</h3>
               <h3 className="text-gray-500 h-15">
                 I had a memorable stay at your hotel. The room was comfortable
-                and had a balcony with a lovely view of the garden. I enjoyed
-                exploring the nearby nature.
+                and had a balcony with a lovely view of the garden.
               </h3>
             </div>
             <div className="py-5  px-6 flex-col h-70 flex rounded-lg    justify-center items-center bg-white">
@@ -196,8 +195,7 @@ const UserReview = () => {
               <h3 className="text-blue-600">Rating: 4</h3>
               <h3 className="text-gray-500 h-15">
                 We were delighted by the culinary offerings at the hotel's
-                restaurant. The chef's special menu was a highlight, and the
-                wine selection was impressive.
+                restaurant. The chef's special menu wasvery delicious.
               </h3>
             </div>
           </div>

@@ -13,6 +13,7 @@ import PrivateRoute from './PrivateRoute';
 import UpdateDate from '../Pages/UpdateDate/UpdateDate';
 import ReviewPage from '../Pages/ReviewPage/ReviewPage';
 import Gallery from '../Pages/Gallery/Gallery';
+import ContactUs from '../Pages/ContactUs/ContactUs';
 
 const Route = createBrowserRouter([
   {
@@ -59,6 +60,10 @@ const Route = createBrowserRouter([
       {
         path: '/gallery',
         element: <Gallery></Gallery>,
+      },
+      {
+        path: 'contactUs',
+        element: <ContactUs></ContactUs>,
       },
       {
         path: '/update/:id',

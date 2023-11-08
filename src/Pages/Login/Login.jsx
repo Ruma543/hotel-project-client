@@ -38,7 +38,7 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="mt-20">
       <PageTitle title="login page"></PageTitle>
       <div>
         <h3 className="text-2xl font-serif text-center font-semibold mt-10 mb-3">

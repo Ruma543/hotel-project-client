@@ -83,6 +83,20 @@ const Navbar = () => {
           Gallery
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/contactUs"
+          className={({ isActive, isPending }) =>
+            isActive
+              ? 'text-red-700 underline lg:text-white font-semibold '
+              : isPending
+              ? 'pending'
+              : ''
+          }
+        >
+          Contact Us
+        </NavLink>
+      </li>
     </>
   );
   const [fix, setFix] = useState(false);

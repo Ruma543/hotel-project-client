@@ -1,4 +1,5 @@
 import React from 'react';
+import PageTitle from '../../Component/PageTitle/PageTitle';
 
 const room1 = 'https://i.ibb.co/y4RzGNH/4.jpg';
 const room2 = 'https://i.ibb.co/wWC2gvW/3.jpg';
@@ -13,6 +14,7 @@ const event3 = 'https://i.ibb.co/hDPzxL7/event-3.jpg';
 const Gallery = () => {
   return (
     <div className="mt-20 lg:w-4/5 md:w-11/12 w-full mx-auto">
+      <PageTitle title="gallery"></PageTitle>
       <h3 className="text-center font-semibold lg:text-4xl text-2xl">
         Photo Gallery for Our Rooms{' '}
       </h3>
