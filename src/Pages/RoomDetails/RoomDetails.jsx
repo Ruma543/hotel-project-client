@@ -100,7 +100,7 @@ const RoomDetails = () => {
             </h3>
             <h3 className="text-blue-600 font-semibold">
               {' '}
-              Price:{price_per_night}
+              Price:${price_per_night}
             </h3>
           </div>
           {available_rooms !== 0 ? (

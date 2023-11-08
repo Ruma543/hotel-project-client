@@ -113,44 +113,45 @@ const Rooms = () => {
               </div>
             ))}
           </div>
+          <div className="flex justify-center">
+            <button onClick={handlePrev}>
+              <span>
+                <FcPrevious></FcPrevious>{' '}
+              </span>
+            </button>
+            {Array(totalPage)
+              .fill(0)
+              .map((item, index) => {
+                const pageNumber = index + 1;
+                return (
+                  <button
+                    key={pageNumber}
+                    onClick={() => setPage(pageNumber)}
+                    className={`${
+                      pageNumber === page
+                        ? 'btn btn-circle btn-primary '
+                        : ' btn btn-circle btn-ghost'
+                    }`}
+                  >
+                    {pageNumber}
+                  </button>
+                );
+              })}
+            <button onClick={handleNext}>
+              <span>
+                <FcNext></FcNext>
+              </span>
+            </button>
+          </div>
         </div>
       )}
-      {isLoading ? (
+      {/* {isLoading ? (
         <div>
           <progress className="progress w-56"></progress>
         </div>
       ) : (
-        <div className="flex justify-center">
-          <button onClick={handlePrev}>
-            <span>
-              <FcPrevious></FcPrevious>{' '}
-            </span>
-          </button>
-          {Array(totalPage)
-            .fill(0)
-            .map((item, index) => {
-              const pageNumber = index + 1;
-              return (
-                <button
-                  key={pageNumber}
-                  onClick={() => setPage(pageNumber)}
-                  className={`${
-                    pageNumber === page
-                      ? 'btn btn-circle btn-primary '
-                      : ' btn btn-circle btn-ghost'
-                  }`}
-                >
-                  {pageNumber}
-                </button>
-              );
-            })}
-          <button onClick={handleNext}>
-            <span>
-              <FcNext></FcNext>
-            </span>
-          </button>
-        </div>
-      )}
+       
+      )} */}
     </div>
   );
 };
