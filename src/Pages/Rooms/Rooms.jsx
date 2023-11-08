@@ -6,8 +6,8 @@ import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 import { FcPrevious, FcNext } from 'react-icons/fc';
 import PageTitle from '../../Component/PageTitle/PageTitle';
-import animation from '../../assets/Animation - 1699349716959.json';
-import Lottie from 'react-lottie';
+// import animation from '../../assets/Animation - 1699349716959.json';
+// import Lottie from 'react-lottie';
 
 const Rooms = () => {
   const [price, setPrice] = useState('');
@@ -27,7 +27,7 @@ const Rooms = () => {
   });
   if (isLoading) {
     <div>
-      <p>loading....</p>
+      <progress className="progress w-56"></progress>
       {/* <Lottie
         className="w-20 h-20"
         animationData={animation}
@@ -71,13 +71,13 @@ const Rooms = () => {
 
       {isLoading ? (
         <div>
-          <p>loading....</p>
-          <Lottie
+          <progress className="progress w-56"></progress>
+          {/* <Lottie
             className="w-20 h-20"
             animationData={animation}
             loop={false}
             autoplay={true}
-          />
+          /> */}
         </div>
       ) : (
         <div>
@@ -117,7 +117,7 @@ const Rooms = () => {
       )}
       {isLoading ? (
         <div>
-          <p>loading....</p>
+          <progress className="progress w-56"></progress>
         </div>
       ) : (
         <div className="flex justify-center">

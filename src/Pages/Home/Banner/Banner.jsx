@@ -1,5 +1,5 @@
 import React from 'react';
-import Lottie from 'react-lottie';
+// import Lottie from 'react-lottie';
 // import bannerLottie from '../../../assets/Animation - 1699349716959.json';
 // import Lottie from 'react-lottie';
 const Banner = () => {
@@ -17,6 +17,18 @@ const Banner = () => {
           <h3 className="lg:text-6xl text-4xl text-center  text-white mt-20">
             The Perfect Base For You
           </h3>
+
+          {/* <h3
+            data-aos="fade-up-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            className="lg:text-6xl text-white text-4xl text-center mt-20 font-serif font-semibold"
+          >
+            The Perfect Base For You
+          </h3> */}
+
           <p className="text-white text-center">
             Escape to our enchanting hotel, where relaxation meets
             sophistication. Indulge in impeccable service, unwind in style, and

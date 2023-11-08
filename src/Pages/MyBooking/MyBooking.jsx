@@ -74,7 +74,7 @@ const MyBooking = () => {
     <div className="w-11/12 mx-auto mt-20">
       <PageTitle title="my booking page"></PageTitle>
       {loading ? (
-        <p>loading.....</p>
+        <progress className="progress w-56"></progress>
       ) : (
         <div>
           <h3 className="text-center font-semibold font-serif text-3xl my-7">

@@ -1,4 +1,9 @@
 import React from 'react';
+
+import { AiOutlineHome, AiOutlinePhone } from 'react-icons/ai';
+import { AiOutlineMail } from 'react-icons/ai';
+import PageTitle from '../../Component/PageTitle/PageTitle';
+
 const event3 = 'https://i.ibb.co/nL2cpB0/18.jpg';
 const ContactUs = () => {
   return (
@@ -9,8 +14,25 @@ const ContactUs = () => {
         backgroundSize: 'cover',
       }}
     >
-      <div className="bg-black/70 h-full px-10 grid gap-5 lg:grid-cols-2 grid-cols-1">
-        <div></div>
+      <PageTitle title="contactUs"></PageTitle>
+      <div className="bg-black/70 h-full px-10 grid gap-5 lg:grid-cols-2 grid-cols-1 mt-10">
+        <div>
+          <div className="space-y-3">
+            <h3 className="text-white border-b-2 w-1/3 py-3">Contact</h3>
+            <h3 className="text-white flex gap-3">
+              <AiOutlineHome></AiOutlineHome>
+              <span>176 W street name, Dhaka, Bangladesh</span>
+            </h3>
+            <h3 className="text-white flex gap-3">
+              <AiOutlinePhone></AiOutlinePhone>
+              <span> Telephone: +0088123-4566</span>
+            </h3>
+            <h3 className="text-white flex gap-3">
+              <AiOutlineMail></AiOutlineMail>
+              <span>Email: info@paradise.hotel.com</span>
+            </h3>
+          </div>
+        </div>
         <div>
           <div className="flex flex-col space-y-4">
             <label className=" text-xl text-white font-semibold text-left ">
