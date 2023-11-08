@@ -22,7 +22,15 @@ const FeaturedRoom = () => {
       </h3>
       <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-5">
         {featuredRooms?.map(item => (
-          <div key={item._id} className="relative p-5 rounded-lg shadow-lg">
+          <div
+            data-aos="flip-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+            // className="text-white text-center"
+            key={item._id}
+            className="relative p-5 rounded-lg shadow-lg"
+          >
             <img className="h-56 w-full" src={item.room_image} alt="" />
             <div className="absolute top-1/3 flex items-center justify-center bg-blue-300 w-20 h-20 rounded-full hover:bg-blue-400">
               <Link to={`/details/${item._id}`}>

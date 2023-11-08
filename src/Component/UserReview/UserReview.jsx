@@ -5,17 +5,8 @@ import Marquee from 'react-fast-marquee';
 
 const img1 =
   'https://i.ibb.co/D7sBRP2/manuel-moreno-DGa0-LQ0y-DPc-unsplash.jpg';
-// const img2 =
-//   'https://i.ibb.co/yndFV54/sasha-kaunas-x-Ea-Aoiz-NFV8-unsplash.jpg';
-// const img3 =
-//   'https://i.ibb.co/yndFV54/sasha-kaunas-x-Ea-Aoiz-NFV8-unsplash.jpg';
+
 const UserReview = () => {
-  // const [reviews, setReviews] = useState([]);
-  // useEffect(() => {
-  //   fetch('https://hotel-project-server.vercel.app/reviews')
-  //     .then(res => res.json())
-  //     .then(data => setReviews(data));
-  // }, []);
   return (
     <div className="w-11/12 mx-auto ">
       <h3 className="lg:text-4xl  text-2xl font-semibold font-serif pt-7  pb-4 text-center">
@@ -94,7 +85,7 @@ const UserReview = () => {
           </div>
         </div>
         <div id="slide2" className="carousel-item relative w-full">
-          <div className="w-4/5 mx-auto grid  lg:grid-cols-3 grid-cols-1 gap-5  items-center">
+          <div className="w-4/5 mx-auto grid  lg:grid-cols-3 grid-cols-1 gap-5  items-center mb-20">
             <div className="py-5 px-6 flex-col flex justify-center rounded-lg  h-70 items-center bg-white">
               <img
                 className="w-20 h-20 rounded-full"
@@ -151,7 +142,7 @@ const UserReview = () => {
           </div>
         </div>
         <div id="slide3" className="carousel-item relative w-full">
-          <div className="w-4/5 mx-auto grid  lg:grid-cols-3 grid-cols-1  gap-5  items-center">
+          <div className="w-4/5 mx-auto grid  lg:grid-cols-3 grid-cols-1  gap-5  items-center mb-20">
             <div className="py-5 px-6 flex-col flex justify-center rounded-lg  h-70 items-center bg-white">
               <img
                 className="w-20 h-20 rounded-full"
@@ -199,7 +190,7 @@ const UserReview = () => {
               </h3>
             </div>
           </div>
-          <div className="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 bottom-0">
+          <div className="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 bottom-0 ">
             <a href="#slide2" className="btn btn-circle">
               ❮
             </a>
