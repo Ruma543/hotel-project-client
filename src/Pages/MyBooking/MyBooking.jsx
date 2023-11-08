@@ -77,7 +77,7 @@ const MyBooking = () => {
         <progress className="progress w-56"></progress>
       ) : (
         <div>
-          <h3 className="text-center font-semibold font-serif text-3xl my-7">
+          <h3 className="text-center font-semibold font-serif text-2xl lg:text-3xl my-7">
             {' '}
             Your Booking Count : {bookings.length}
           </h3>
