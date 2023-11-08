@@ -46,7 +46,7 @@ const Login = () => {
         </h3>
         <form
           onSubmit={handleLogUser}
-          className="lg:w-1/3 w-11/12 md:w-3/5 mx-auto bg-blue-200 px-5 py-7 rounded-lg "
+          className="lg:w-1/3 w-11/12 md:w-3/5 mx-auto bg-orange-200 px-5 py-7 rounded-lg "
         >
           <label className="label">
             <span className="text-black font-semibold text-xl">User Email</span>

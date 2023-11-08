@@ -69,7 +69,7 @@ const Registration = () => {
         </h3>
         <form
           onSubmit={handleRegistration}
-          className="lg:w-1/3 w-11/12 md:w-3/5 mx-auto bg-blue-200 px-5 py-3 rounded-lg "
+          className="lg:w-1/3 w-11/12 md:w-3/5 mx-auto bg-orange-200 px-5 py-3 rounded-lg "
         >
           <label className="label">
             <span className="text-blue-700 font-semibold text-xl">
