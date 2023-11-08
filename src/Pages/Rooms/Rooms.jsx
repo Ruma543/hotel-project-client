@@ -6,6 +6,8 @@ import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 import { FcPrevious, FcNext } from 'react-icons/fc';
 import PageTitle from '../../Component/PageTitle/PageTitle';
+import animation from '../../assets/Animation - 1699349716959.json';
+import Lottie from 'react-lottie';
 
 const Rooms = () => {
   const [price, setPrice] = useState('');
@@ -24,7 +26,14 @@ const Rooms = () => {
     queryFn: getRooms,
   });
   if (isLoading) {
-    <p>loading....</p>;
+    <div>
+      <Lottie
+        className="w-20 h-20"
+        animationData={animation}
+        loop={false}
+        autoplay={true}
+      />
+    </div>;
   }
 
   const limit = 6;
@@ -60,7 +69,14 @@ const Rooms = () => {
       </div>
 
       {isLoading ? (
-        <p>loading....</p>
+        <div>
+          <Lottie
+            className="w-20 h-20"
+            animationData={animation}
+            loop={false}
+            autoplay={true}
+          />
+        </div>
       ) : (
         <div>
           <div className="grid lg:grid-cols-3 grid-cols-1">

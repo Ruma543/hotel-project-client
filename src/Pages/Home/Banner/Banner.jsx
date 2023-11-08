@@ -15,6 +15,11 @@ const Banner = () => {
           <h3 className="lg:text-6xl text-4xl text-center  text-white mt-20">
             The Perfect Base For You
           </h3>
+          <p className="text-white text-center">
+            Escape to our enchanting hotel, where relaxation meets
+            sophistication. Indulge in impeccable service, unwind in style, and
+            create memories to cherish. Book your dream getaway today
+          </p>
           <div className="flex gap-5">
             <button className="lg:bg-orange-900/50 bg-blue-700 text-sm hover:bg-orange-700 text-white lg:text-xl font-bold font-serif px-4 py-3 ">
               Take a Tour

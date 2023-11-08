@@ -44,7 +44,7 @@ const RoomDetails = () => {
         src={room_image}
         alt=""
       />
-      {/* <h3>{userReview.review}</h3> */}
+
       <h3 className="text-center text-3xl py-5 font-semibold">
         Please check Our User Reviews : {userReview?.length}
       </h3>
