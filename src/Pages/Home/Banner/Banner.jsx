@@ -33,7 +33,7 @@ const Banner = () => {
           </div>
         </div>
         <div className="flex justify-center items-center mt40">
-          <div
+          {/* <div
             data-aos="fade-up-right"
             data-aos-offset="200"
             data-aos-delay="50"
@@ -48,7 +48,7 @@ const Banner = () => {
           </div>
           <div data-aos="fade-up-left">
             <h3>hiiiiiiiiii</h3>
-          </div>
+          </div> */}
           {/* <div
             data-aos="fade-right"
             data-aos-offset="200"
