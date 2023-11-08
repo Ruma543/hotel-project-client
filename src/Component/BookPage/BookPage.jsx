@@ -1,10 +1,11 @@
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigate } from 'react-router-dom';
 import useAuth from '../../Hook/useAuth';
 import useAxiosSecure from '../../Hook/useAxiosSecure';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import Swal from 'sweetalert2';
 
 const url = 'https://i.ibb.co/7KyFJzQ/bookpage.jpg';
 const BookPage = () => {
@@ -12,6 +13,7 @@ const BookPage = () => {
   const bookItem = useLoaderData();
   const axiosSecure = useAxiosSecure();
   const [startDate, setStartDate] = useState(new Date());
+  const navigate = useNavigate();
   console.log(bookItem);
   const {
     _id,
@@ -48,7 +50,9 @@ const BookPage = () => {
 
     axiosSecure
       .patch(`/services/s/${_id}`, bookUpdate)
-      .then(res => console.log(res.data))
+      .then(res => {
+        console.log(res.data);
+      })
       .catch(error => {
         console.error('An error occurred:', error);
       });
@@ -56,9 +60,17 @@ const BookPage = () => {
     console.log(bookUpdate);
     console.log(_id);
 
-    axiosSecure
-      .post('/bookings', bookUpdate)
-      .then(res => console.log(res.data));
+    axiosSecure.post('/bookings', bookUpdate).then(res => {
+      if (res?.data?.insertedId) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Your Room is booked Successfully',
+          showConfirmButton: true,
+        });
+
+        navigate('/myBooking');
+      }
+    });
   };
   return (
     <div

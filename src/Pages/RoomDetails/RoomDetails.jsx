@@ -45,17 +45,39 @@ const RoomDetails = () => {
         alt=""
       />
       {/* <h3>{userReview.review}</h3> */}
-      <h3> {userReview?.length}</h3>
-      {userReview.length > 0 ? (
-        userReview?.map(item => (
-          <div key={item._id}>
-            <h3>{item.review}</h3>
-            <h3>{item.date}</h3>
-          </div>
-        ))
-      ) : (
-        <p>no review....</p>
-      )}
+      <h3 className="text-center text-3xl py-5 font-semibold">
+        Please check Our User Reviews : {userReview?.length}
+      </h3>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 my-4">
+        {userReview.length > 0 ? (
+          userReview?.map(item => (
+            <div
+              key={item._id}
+              className="bg-blue-100 rounded-lg shadow-lg p-6 space-y-4 "
+            >
+              <div className="flex justify-between  ">
+                {' '}
+                <h3 className="font-semibold">
+                  <span className="text-blue-800">Customer name:</span>{' '}
+                  {item.name}
+                </h3>
+                <h3 className="font-semibold">
+                  <span className="text-blue-800">Rating:</span> {item.rating}
+                </h3>
+              </div>
+              <h3 className="font-semibold">
+                <span className="text-blue-800">Reviews:</span>
+                {item.review}
+              </h3>
+              <h3 className="font-semibold">
+                <span className="text-blue-800">Post time:</span> {item.date}
+              </h3>
+            </div>
+          ))
+        ) : (
+          <p className="text-blue-300">Recently No Reviews Added.</p>
+        )}
+      </div>
       <div className=" w-2/5 mx-auto my-5">
         <Marquee>
           <h3 className="text-blue-600 font-semibold font-serif ">
@@ -63,7 +85,7 @@ const RoomDetails = () => {
           </h3>
         </Marquee>
       </div>
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-5">
         <div className="p-6 rounded-lg shadow-lg bg-blue-300 space-y-4">
           <h3 className="text-3xl font-semibold text-green-600">{room_name}</h3>
           <h3 className="text-blue-600 font-semibold">{room_description}</h3>

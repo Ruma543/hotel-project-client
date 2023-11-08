@@ -1,11 +1,12 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigate } from 'react-router-dom';
 import useAuth from '../../Hook/useAuth';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { useState } from 'react';
 import useAxiosSecure from '../../Hook/useAxiosSecure';
 import PageTitle from '../../Component/PageTitle/PageTitle';
+import Swal from 'sweetalert2';
 
 // const url = 'https://i.ibb.co/5Wv48dg/updateimage.jpg';
 const UpdateDate = () => {
@@ -13,6 +14,8 @@ const UpdateDate = () => {
   const { loading } = useAuth();
   const [startDate, setStartDate] = useState(new Date());
   const axiosSecure = useAxiosSecure();
+  const navigate = useNavigate();
+
   const { room_name, room_image, customerName, _id } = updateDate || {};
   const handleUpdateBookingDate = e => {
     e.preventDefault();
@@ -24,9 +27,24 @@ const UpdateDate = () => {
 
     axiosSecure
       .put(`/bookings/s/${_id}`, updateDate)
-      .then(res => console.log(res.data))
+      .then(res => {
+        console.log(res.data);
+        if (res?.data?.modifiedCount > 0) {
+          Swal.fire({
+            icon: 'success',
+            title: 'Booking Date update successfully',
+            showConfirmButton: true,
+          });
+          navigate('/myBooking');
+        }
+      })
       .catch(error => {
         console.error('An error occurred:', error);
+        Swal.fire({
+          icon: 'error',
+          title: 'Something wrong',
+          showConfirmButton: true,
+        });
       });
   };
 

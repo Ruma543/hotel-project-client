@@ -1,14 +1,16 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigate } from 'react-router-dom';
 import useAuth from '../../Hook/useAuth';
 import useAxiosSecure from '../../Hook/useAxiosSecure';
 import PageTitle from '../../Component/PageTitle/PageTitle';
+import Swal from 'sweetalert2';
 
 // const url = 'https://i.ibb.co/Dz2Fy59/review-image.jpg';
 const ReviewPage = () => {
   const reviews = useLoaderData();
   const { loading } = useAuth();
   const axiosSecure = useAxiosSecure();
+  const navigate = useNavigate();
   const { room_name, room_image, customerName, email, roomId } = reviews || {};
   console.log(reviews);
   const handleAddReview = e => {
@@ -27,9 +29,18 @@ const ReviewPage = () => {
     };
     console.log(feedback);
 
-    axiosSecure
-      .post('/userReview', feedback)
-      .then(res => console.log(res.data));
+    axiosSecure.post('/userReview', feedback).then(res => {
+      console.log(res.data);
+      if (res?.data?.insertedId) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Your review Post Successfully',
+          showConfirmButton: true,
+        });
+
+        navigate('/myBooking');
+      }
+    });
   };
   return (
     <div>
@@ -94,7 +105,7 @@ const ReviewPage = () => {
               <input
                 className="btn btn-primary lg:w-1/5 w-2/3 mx-auto"
                 type="submit"
-                value="Add New Room"
+                value="Post Review"
               />
             </div>
           </form>

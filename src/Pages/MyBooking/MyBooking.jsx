@@ -71,32 +71,49 @@ const MyBooking = () => {
     }
   };
   return (
-    <div className="w-11/12 mx-auto">
+    <div className="w-11/12 mx-auto mt-20">
       <PageTitle title="my booking page"></PageTitle>
       {loading ? (
         <p>loading.....</p>
       ) : (
         <div>
-          <h3> Your Booking:{bookings.length}</h3>
+          <h3 className="text-center font-semibold font-serif text-3xl my-7">
+            {' '}
+            Your Booking Count : {bookings.length}
+          </h3>
           <div className="space-y-5">
             {bookings.map(item => (
-              <div className="grid grid-cols-2 " key={item._id}>
-                <img className="h-56" src={item.room_image} alt="" />
-                <div>
-                  <h3>Room: {item.room_name}</h3>
-                  <h3>Customer Name {item.customerName}</h3>
-                  <h3>Booking Date: {item.date}</h3>
-                  <div>
+              <div
+                className="grid lg:grid-cols-2 grid-cols-1 gap-5 lg:w-2/3 w-full mx-auto rounded-lg shadow-lg p-6"
+                key={item._id}
+              >
+                <img className="h-56 w-full" src={item.room_image} alt="" />
+                <div className="grid grid-cols-2">
+                  <div className="space-y-5 flex flex-col">
+                    <h3 className="font-bold text-xm lg:text-xl text-left">
+                      Room: {item.room_name}
+                    </h3>
+                    <h3 className="font-bold text-xm lg:text-xl text-left">
+                      Customer Name: {item.customerName}
+                    </h3>
+                    <h3 className="font-bold text-xm lg:text-xl text-left">
+                      Booking Date: {item.date}
+                    </h3>
+                  </div>
+                  <div className="flex gap-5 flex-col">
                     <Link to={`/update/${item._id}`}>
-                      <button className="btn btn-primary">Update Date</button>
+                      <button className="bg-green-500 text-white px-4 py-3 hover:bg-green-700">
+                        Update Date
+                      </button>
                     </Link>
                     <Link to={`/review/${item._id}`}>
-                      <button className="btn btn-primary">Review</button>
+                      <button className="bg-blue-500 text-white px-4 py-3 hover:bg-blue-700">
+                        Share Review
+                      </button>
                     </Link>
                     <button
                       onClick={() => handleDelete(item._id, item)}
-                      // disabled={!isDeletable(item)}
-                      className="btn btn-error"
+                      className="bg-red-500 text-white px-4 py-3 w-2/3 hover:bg-red-700"
                     >
                       Delete
                     </button>

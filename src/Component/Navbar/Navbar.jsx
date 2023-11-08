@@ -31,7 +31,11 @@ const Navbar = () => {
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
-            isActive ? 'text-white font-semibold ' : isPending ? 'pending' : ''
+            isActive
+              ? 'text-red-700 underline lg:text-white font-semibold '
+              : isPending
+              ? 'pending'
+              : ''
           }
         >
           Home
@@ -41,7 +45,11 @@ const Navbar = () => {
         <NavLink
           to="/rooms"
           className={({ isActive, isPending }) =>
-            isActive ? 'text-white font-semibold ' : isPending ? 'pending' : ''
+            isActive
+              ? 'text-red-700 underline lg:text-white font-semibold '
+              : isPending
+              ? 'pending'
+              : ''
           }
         >
           Rooms
@@ -51,7 +59,11 @@ const Navbar = () => {
         <NavLink
           to="/myBooking"
           className={({ isActive, isPending }) =>
-            isActive ? 'text-white font-semibold ' : isPending ? 'pending' : ''
+            isActive
+              ? 'text-red-700 underline lg:text-white font-semibold '
+              : isPending
+              ? 'pending'
+              : ''
           }
         >
           My Booking
@@ -62,7 +74,7 @@ const Navbar = () => {
   const [fix, setFix] = useState(false);
   useEffect(() => {
     const setFixed = () => {
-      if (window.scrollY > 500) {
+      if (window.scrollY > 400) {
         setFix(true);
       } else {
         setFix(false);
@@ -78,8 +90,8 @@ const Navbar = () => {
       <div
         className={
           fix
-            ? 'transition duration-150 ease-in-out h-20 lg:px-6 bg-orange-300 flex navbar   '
-            : ' h-20 bg-orange-700/25 flex navbar lg:px-6 '
+            ? 'transition duration-150 ease-in-out h-20 lg:px-6 bg-blue-300 flex navbar   '
+            : ' h-20 lg:bg-orange-400 bg-orange-200 flex navbar lg:px-6 '
         }
       >
         <div className="navbar-start">
@@ -107,8 +119,9 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-4xl text-white">
-            <span className="text-green-700 text-4xl">Paradise</span> Hotel
+          <a className="btn btn-ghost normal-case text-xl lg:text-4xl text-white">
+            <span className="text-green-700 text-xl lg:text-4xl">Paradise</span>{' '}
+            Hotel
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">

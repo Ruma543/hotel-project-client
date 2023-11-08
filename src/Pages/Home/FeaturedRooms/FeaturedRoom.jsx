@@ -17,12 +17,13 @@ const FeaturedRoom = () => {
   console.log(featuredRooms);
   return (
     <div className="w-11/12 mx-auto">
-      <h3 className="">Our Featured Rooms</h3>
-      <div className="grid grid-cols-3 gap-5">
+      <h3 className="text-4xl font-serif font-semibold text-center py-6">
+        Our Featured Rooms
+      </h3>
+      <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-5">
         {featuredRooms?.map(item => (
           <div key={item._id} className="relative p-5 rounded-lg shadow-lg">
             <img className="h-56 w-full" src={item.room_image} alt="" />
-            {/* <h3>{item._id}</h3> */}
             <div className="absolute top-1/3 flex items-center justify-center bg-blue-300 w-20 h-20 rounded-full hover:bg-blue-400">
               <Link to={`/details/${item._id}`}>
                 {' '}

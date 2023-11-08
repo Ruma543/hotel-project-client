@@ -4,7 +4,7 @@ const Newsletter = () => {
   return (
     <div className="w-11/12 mx-auto my-6">
       <div
-        className="h-[60vh] w-2/3 mx-auto rounded-lg"
+        className="lg:h-[60vh] lg:w-2/3 w-full mx-auto rounded-lg"
         style={{
           backgroundImage: `url(${img3})`,
           backgroundSize: 'cover',

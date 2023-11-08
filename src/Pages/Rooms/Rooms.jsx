@@ -43,18 +43,18 @@ const Rooms = () => {
     }
   };
   return (
-    <div className="w-11/12 mx-auto mb-6 lg:mt-20">
+    <div className="w-11/12 mx-auto mb-6 mt-20 ">
       <PageTitle title="rooms page"></PageTitle>
       <div className="flex justify-between">
-        <h3 className="text-3xl font-semibold text-center">
+        <h3 className="lg:text-3xl text-xl font-semibold text-center">
           Our Available Room:{data?.data?.total}
         </h3>
 
         <div className="text-right py-4">
           <select onChange={e => setPrice(e.target.value)} name="" id="">
             <option value="">Select One</option>
-            <option value="asc">High to low</option>
-            <option value="desc">Low to high</option>
+            <option value="asc">Low to high</option>
+            <option value="desc"> High to low</option>
           </select>
         </div>
       </div>
@@ -63,7 +63,7 @@ const Rooms = () => {
         <p>loading....</p>
       ) : (
         <div>
-          <div className="grid grid-cols-3">
+          <div className="grid lg:grid-cols-3 grid-cols-1">
             {data?.data?.result.map(room => (
               <div
                 key={room._id}
