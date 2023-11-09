@@ -55,20 +55,25 @@ const Navbar = () => {
           Rooms
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          to="/myBooking"
-          className={({ isActive, isPending }) =>
-            isActive
-              ? 'text-red-700 underline lg:text-white font-semibold '
-              : isPending
-              ? 'pending'
-              : ''
-          }
-        >
-          My Booking
-        </NavLink>
-      </li>
+      {user && (
+        <>
+          <li>
+            <NavLink
+              to="/myBooking"
+              className={({ isActive, isPending }) =>
+                isActive
+                  ? 'text-red-700 underline lg:text-white font-semibold '
+                  : isPending
+                  ? 'pending'
+                  : ''
+              }
+            >
+              My Booking
+            </NavLink>
+          </li>
+        </>
+      )}
+
       <li>
         <NavLink
           to="/gallery"

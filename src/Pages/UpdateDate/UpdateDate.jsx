@@ -49,19 +49,19 @@ const UpdateDate = () => {
   };
 
   return (
-    <div>
+    <div className="mt-20">
       <PageTitle title="Update Date page"></PageTitle>
       {loading ? (
         <p>loading...</p>
       ) : (
         <div
-          className=" w-3/4 mx-auto h-[70vh]"
+          className=" lg:w-3/4 w-full md:w-11/12 mx-auto h-[70vh] mt-20"
           style={{
             backgroundImage: `url(${room_image})`,
             backgroundSize: 'cover',
           }}
         >
-          <h2 className="text-2xl bg-black/25 text-white text-center font-semibold  font-serif py-5">
+          <h2 className="lg:text-2xl text-xl  bg-black/25 text-white text-center font-semibold  font-serif py-5">
             Update Date of Booking :{room_name}
           </h2>
           <form

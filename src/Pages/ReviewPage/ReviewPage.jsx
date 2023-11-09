@@ -43,13 +43,13 @@ const ReviewPage = () => {
     });
   };
   return (
-    <div>
+    <div className="mt-20">
       <PageTitle title="review page"></PageTitle>
       {loading ? (
         <p>loading....</p>
       ) : (
         <div
-          className=" w-3/4 mx-auto h-[70vh]"
+          className=" lg:w-3/4 w-full md:w-11/12 mx-auto h-[70vh]"
           style={{
             backgroundImage: `url(${room_image})`,
             backgroundSize: 'cover',

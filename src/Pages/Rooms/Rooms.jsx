@@ -6,6 +6,9 @@ import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 import { FcPrevious, FcNext } from 'react-icons/fc';
 import PageTitle from '../../Component/PageTitle/PageTitle';
+// import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+// import 'react-tabs/style/react-tabs.css';
+
 // import animation from '../../assets/Animation - 1699349716959.json';
 // import Lottie from 'react-lottie';
 
@@ -55,16 +58,52 @@ const Rooms = () => {
   return (
     <div className="w-11/12 mx-auto mb-6 mt-20 ">
       <PageTitle title="rooms page"></PageTitle>
-      <div className="flex justify-between">
-        <h3 className="lg:text-3xl text-xl font-semibold text-center">
+      <div className="flex lg:justify-between  flex-col">
+        <h3 className="lg:text-3xl text-lg font-semibold text-center">
           Our Available Room:{data?.data?.total}
         </h3>
 
-        <div className="text-right py-4">
-          <select onChange={e => setPrice(e.target.value)} name="" id="">
-            <option value="">Select One</option>
-            <option value="asc">Low to high</option>
-            <option value="desc"> High to low</option>
+        {/* <div>
+          <Tabs>
+            <TabList onChange={e => setPrice(e.target.value)}>
+              <Tab>Default</Tab>
+              <Tab>
+                <option value="asc">Low to high</option>
+              </Tab>
+              <Tab>
+                <option value="desc"> High to low</option>
+              </Tab>
+            </TabList>
+
+            <TabPanel>
+              <option value="asc">Low to high</option>
+            </TabPanel>
+            <TabPanel>
+              <option value="desc"> High to low</option>
+            </TabPanel>
+          </Tabs>
+        </div> */}
+
+        <div className="text-right py-4 flex gap-3 justify-center ">
+          <h3 className="lg:text-2xl text-sm font-semibold text-center">
+            Choose Your Room With Price Range
+          </h3>
+          <select
+            className="bg-blue-500 px-4 py-2 rounded-lg text-white outline-0"
+            onChange={e => setPrice(e.target.value)}
+            name=""
+            id=""
+          >
+            <option className="px-4 py-2 rounded-lg text-white" value="">
+              Select One
+            </option>
+            <option className="px-4 py-2 rounded-lg text-white" value="asc">
+              Low to high
+            </option>
+            <option className="px-4 py-2 rounded-lg text-white" value="desc">
+              {' '}
+              High to low
+            </option>
           </select>
         </div>
       </div>
@@ -81,7 +120,7 @@ const Rooms = () => {
         </div>
       ) : (
         <div>
-          <div className="grid lg:grid-cols-3 grid-cols-1">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
             {data?.data?.result.map(room => (
               <div
                 key={room._id}
