@@ -34,6 +34,6 @@
 - react-fast-marquee
 - react-helmet
 
-### server site Github link: https://github.com/Ruma543/hotel-project-server
+### server side Github link: https://github.com/Ruma543/hotel-project-server
 
-##### client site live link: https://hotel-project-client.web.app
+##### client side live link: https://hotel-project-client.web.app
