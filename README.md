@@ -27,8 +27,12 @@
 
 ### Technological Expertise
 
-Utilized React Helmet for effective SEO optimization. Incorporated toast
-notifications and animations to enhance user experience and visual appeal.
+- Utilized React Helmet for effective SEO optimization.
+- Incorporated toast notifications and animations to enhance user experience and
+  visual appeal.
+- react-datepicker
+- react-fast-marquee
+- react-helmet
 
 ### server site Github link: https://github.com/Ruma543/hotel-project-server
 
