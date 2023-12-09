@@ -25,4 +25,11 @@
    and the review is updated on the individual room's details page. In this
    project, I use React Helmet, toast, and animations.
 
+### Technological Expertise
+
+Utilized React Helmet for effective SEO optimization. Incorporated toast
+notifications and animations to enhance user experience and visual appeal.
+
+### server site Github link: https://github.com/Ruma543/hotel-project-server
+
 ##### client site live link: https://hotel-project-client.web.app
