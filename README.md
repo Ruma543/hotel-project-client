@@ -36,4 +36,11 @@
 
 ### server side Github link: https://github.com/Ruma543/hotel-project-server
 
-##### client side live link: https://hotel-project-client.web.app
+### client side live link: https://hotel-project-client.web.app
+
+### Project Selling line
+
+Transform your accommodation experience with our integrated room booking
+platform, offering users seamless exploration, secure bookings, and interactive
+reviews through cutting-edge technologies like React Helmet, toast
+notifications, and animations for optimal engagement and satisfaction.
